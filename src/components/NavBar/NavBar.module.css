@@ -1,5 +1,32 @@
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.NavBar a {
+    flex: 0 50%;
+    cursor: pointer;
+}
+
+.NavBar .Navigation {
+    display: flex;
+    justify-content: center;
+    
+}
+ 
 .NavBar .MobileNavigation {
     display: none;
+}
+
+.NavList {
+    display: flex;
+    justify-content: space-around;
+}
+
+.NavList li {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
 }
 
 @media screen and (max-width: 990px) {
@@ -10,27 +37,33 @@
     .NavBar .MobileNavigation {
         display: flex;
         align-items: center;
-        background: red;
     }
 
     .NavBar .MobileNavigation .Hamburger {
         position: absolute;
         right: 5%;
         cursor: pointer;
-        transition: all 1s ease-in-out;
     }
 
     .NavBar nav ul {
         display: flex;
         flex-direction: column;
         position: absolute;
+        align-items: center;
         top: 80px;
-        right: 0;
-        width: 100%;
+        right: 30px;
     }
 
     .NavBar nav ul li {
-        padding-left: 15%;
+        float: right;
+        margin: 5%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20% 30%;
+    }
+
+    .NavBar nav ul li a {
+        text-align: center;
     }
 
     .NavBar {

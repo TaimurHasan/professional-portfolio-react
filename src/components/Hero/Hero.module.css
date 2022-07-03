@@ -1,0 +1,56 @@
+.hero {
+    background: hsla(31, 90%, 76%, 1);
+  
+    background: linear-gradient(10deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+  
+    background: -moz-linear-gradient(10deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+  
+    background: -webkit-linear-gradient(10deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+  
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1 );
+}
+
+.HeroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.HeroImage {
+    margin: 20px 20px;
+    border-radius: 50%;
+    border:solid 5px black;
+}
+
+.HeroContent h2 {
+    font-size: 50px;
+    font-weight: 2000;
+    text-align: center;
+    padding: 0 2%;
+}
+
+.HeroContent p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 2%;
+}
+
+.HeroIntro {
+    width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+    .hero {
+        height: 450px;
+    }
+    .HeroContent {
+        flex-direction: row;
+    }
+    
+    .HeroIntro {
+        width: 40%;
+    }
+}

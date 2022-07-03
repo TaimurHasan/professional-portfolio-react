@@ -3,10 +3,18 @@ import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
 import classes from './NavBar.module.css';
 
-function NavBar () {
+function NavBar (props) {
+    const {
+        currentSection,
+        setCurrentSection
+    } = props;
+
     return (
         <div className={classes.NavBar}>
-            <Navigation />
+            <a href="/"> 
+                <h1>Taimur Hasan</h1>
+            </a>
+            <Navigation currentSection={currentSection} setCurrentSection={setCurrentSection}/>
             <MobileNavigation />
         </div>
     )

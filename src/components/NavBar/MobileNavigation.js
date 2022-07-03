@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 import classes from './NavBar.module.css';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineMenu } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
 
 function MobileNavigation () {
@@ -9,7 +9,7 @@ function MobileNavigation () {
     const [open, setOpen] = useState(false);
 
     const hamburgerIcon = 
-    <GiHamburgerMenu className = {classes.Hamburger} size='40px' color='black' 
+    <AiOutlineMenu className = {classes.Hamburger} size='40px' color='black' 
         onClick={() => setOpen(!open)}
     />
 
