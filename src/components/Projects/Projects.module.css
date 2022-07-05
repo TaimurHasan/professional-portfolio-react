@@ -8,12 +8,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(106, 106, 106, 0.666);
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
 }
 
-.ProjectCard:hover {
-    background-color: rgba(66, 65, 63, 0.4);
-}
 
 .ProjectCard h4 {
     font-size: 22px;
@@ -32,4 +30,8 @@
     top: 0;
     width: 100%;
     height: auto;
+}
+
+.imageHolder:hover {
+    opacity: 0.9;
 }
