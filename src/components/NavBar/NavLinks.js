@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {motion} from 'framer-motion'
 import classes from './NavBar.module.css'
 
@@ -7,9 +7,19 @@ function NavLinks (props) {
     const animateTo = {opacity: 1, y: 0}
 
     const {
-        currentSection,
         setCurrentSection
     } = props;
+
+    const [sections] = useState([
+        { 
+          name: 'About',
+          description: 'About Me' 
+        },
+        { name: 'Work',
+          description: 'My Work & Projects' 
+        }
+    ])
+    
 
     return (
             <ul className={classes.NavList}>
@@ -27,14 +37,13 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.20}}
                 >
-                    <a 
+                    <span 
                         onClick={() => {
-                            setCurrentSection({ name: "About" })
-                            console.log(currentSection)
+                            setCurrentSection(sections[0])
                         }}
                     >
                         About
-                    </a>
+                    </span>
                 </motion.li>
                 <motion.li 
                     onClick={() => props.isMobile && props.closeMobileMenu()}
@@ -42,7 +51,13 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.30}}
                 >
-                    <a href="/">Work</a>
+                    <span
+                        onClick={() => {
+                            setCurrentSection(sections[1])
+                        }}
+                    >
+                        Work
+                    </span>
                 </motion.li>
                 <motion.li 
                     onClick={() => props.isMobile && props.closeMobileMenu()}

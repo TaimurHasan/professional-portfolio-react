@@ -5,7 +5,6 @@ import classes from './NavBar.module.css';
 
 function NavBar (props) {
     const {
-        currentSection,
         setCurrentSection
     } = props;
 
@@ -14,8 +13,8 @@ function NavBar (props) {
             <a href="/"> 
                 <h1>Taimur Hasan</h1>
             </a>
-            <Navigation currentSection={currentSection} setCurrentSection={setCurrentSection}/>
-            <MobileNavigation />
+            <Navigation setCurrentSection={setCurrentSection}/>
+            <MobileNavigation setCurrentSection={setCurrentSection}/>
         </div>
     )
 };

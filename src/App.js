@@ -3,10 +3,6 @@ import NavBar from "./components/NavBar/NavBar";
 import Hero from "./components/Hero";
 
 function App() {
-  const [sections] = useState([
-    { name: 'About' },
-    { name: 'Work' }
-  ])
 
   const [currentSection, setCurrentSection ] = useState();
 

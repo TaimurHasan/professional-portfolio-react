@@ -8,6 +8,7 @@
     background: -webkit-linear-gradient(10deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
   
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1 );
+    height: 450px;
 }
 
 .HeroContent {

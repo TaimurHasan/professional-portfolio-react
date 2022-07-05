@@ -11,7 +11,7 @@
 .NavBar .Navigation {
     display: flex;
     justify-content: center;
-    
+    padding-right: 4%;
 }
  
 .NavBar .MobileNavigation {
@@ -29,6 +29,10 @@
     padding: 0 10%;
 }
 
+span {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 990px) {
     .NavBar .Navigation {
         display: none;
@@ -41,7 +45,7 @@
 
     .NavBar .MobileNavigation .Hamburger {
         position: absolute;
-        right: 5%;
+        right: 10.5%;
         cursor: pointer;
     }
 
@@ -49,9 +53,9 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        align-items: center;
+        align-items: flex-end;
         top: 80px;
-        right: 30px;
+        right: 9.5%;
     }
 
     .NavBar nav ul li {
