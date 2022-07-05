@@ -1,0 +1,35 @@
+.ProjectCard {
+    padding: 10%;
+    height: 350px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(106, 106, 106, 0.666);
+}
+
+.ProjectCard:hover {
+    background-color: rgba(66, 65, 63, 0.4);
+}
+
+.ProjectCard h4 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.imageHolder {
+    overflow: hidden;
+    position: relative;
+}
+
+.projectImage {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}

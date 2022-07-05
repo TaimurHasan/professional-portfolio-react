@@ -11,7 +11,7 @@ function Hero (props) {
         <section className={classes.hero}>
             {currentSection ? (
                 <div className={classes.HeroContent}>
-                <div className = {`${classes.HeroIntro} ${classes.HeroSection}`}>
+                <div className = {classes.HeroIntro}>
                     <h2>{currentSection.description}</h2>
                     <p></p>
                 </div>

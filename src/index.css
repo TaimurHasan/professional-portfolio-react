@@ -40,6 +40,27 @@ a {
   color: black;
 }
 
+.main-body {
+  margin: 15% 10%
+}
+
+.main-body h3 {
+  font-size: 40px;
+  font-weight: 999px;
+  margin-bottom: 1%;
+}
+
+.main-body p {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 575px) {
+  .main-body {
+    margin: 5% 7.5%;
+  }
+}
+
+
 /* functional styles */
 .container {
   width: 85%;

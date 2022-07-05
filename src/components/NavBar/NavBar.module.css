@@ -1,6 +1,9 @@
 .NavBar {
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .NavBar a {
@@ -12,6 +15,8 @@
     display: flex;
     justify-content: center;
     padding-right: 4%;
+    position: sticky;
+    top: 0;
 }
  
 .NavBar .MobileNavigation {
