@@ -1,0 +1,18 @@
+.Footer {
+    background-color: black;
+    height: 70px;
+    bottom:0;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+.FootNote {
+    margin: 1% auto;
+}
+.FootNote p {
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+    margin: 1px;
+}

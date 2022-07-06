@@ -41,7 +41,8 @@ a {
 }
 
 .main-body {
-  margin: 15% 10%
+  margin: 15% 10%;
+  min-height: auto;
 }
 
 .main-body h3 {
@@ -53,6 +54,7 @@ a {
 .main-body p {
   font-size: 20px;
 }
+
 
 @media screen and (min-width: 575px) {
   .main-body {

@@ -1,5 +1,7 @@
 import React from "react";
-import classes from "./Hero.module.css"
+import classes from "./Hero.module.css";
+import { AiFillLinkedin } from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai"
 
 function Hero (props) {
     const {
@@ -22,9 +24,17 @@ function Hero (props) {
                         <h2>Full Stack Developer</h2>
                         <p>Currently Senior Finance Analyst @ Align Technology</p>
                         <p>A University of Toronto Full-Stack Development and Wilfrid Laurier Business school graduate with a passion for user-centric and scalable technology.</p>
+                        <div className = {classes.HeroLinks}>
+                            <a href="https://www.linkedin.com/in/taimur-h/" target="_blank" rel="noreferrer">
+                             <AiFillLinkedin className = {classes.Link} size = "40px" />
+                            </a>
+                            <a href="https://github.com/TaimurHasan" target="_blank" rel="noreferrer">
+                             <AiFillGithub className = {classes.Link} size = "40px" />
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <img alt="taimur hasan's headhost" className = {classes.HeroImage} src = "./assets/images/Headshot.jpg.jfif" />
+                    <div className = {classes.imageContainer}>
+                        <img alt="taimur hasan's headhost" className = {classes.HeroImage} src = "./assets/images/Headshot.jpg" />
                     </div>
                 </div>
             )}   

@@ -18,6 +18,14 @@ function Projects () {
             background: "left",
             githubUrl: "https://github.com/TaimurHasan/TechTalk",
             liveLink: "https://techtalkbytaimur.herokuapp.com/"
+        },
+        {
+            name: "Organization Tracker",
+            language: "JavaScript",
+            description: "A social media application for sharing blog posts, using user authentication",
+            background: "left",
+            githubUrl: "https://github.com/TaimurHasan/TechTalk",
+            liveLink: "https://techtalkbytaimur.herokuapp.com/"
         }
     ]
 
