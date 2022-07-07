@@ -10,7 +10,7 @@ function NavBar (props) {
 
     return (
         <div className={classes.NavBar}>
-            <a href="/"> 
+            <a href="./"> 
                 <h1>Taimur Hasan</h1>
             </a>
             <Navigation setCurrentSection={setCurrentSection}/>
