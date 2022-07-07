@@ -29,7 +29,7 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.10}}
                 >
-                    <a href="/">Home</a>
+                    <a href="./">Home</a>
                 </motion.li>
                 <motion.li 
                     onClick={() => props.isMobile && props.closeMobileMenu()}
@@ -65,7 +65,7 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.40}}
                 >
-                    <a href="/">Resume</a>
+                    <a href="./">Resume</a>
                 </motion.li>
             </ul>
     )
