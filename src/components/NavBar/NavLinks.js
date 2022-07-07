@@ -3,8 +3,8 @@ import {motion} from 'framer-motion'
 import classes from './NavBar.module.css'
 
 function NavLinks (props) {
-    const animateFrom = {opacity: 0, y: -40}
-    const animateTo = {opacity: 1, y: 0}
+    const animateFrom = {opacity: 0, y: -40, padding: 13}
+    const animateTo = {opacity: 1, y: 0, padding: 13}
 
     const {
         setCurrentSection

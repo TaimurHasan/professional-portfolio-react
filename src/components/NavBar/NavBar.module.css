@@ -39,7 +39,12 @@
     padding: 0 10%;
 }
 
-
+.NavList li a:hover, .NavList li span:hover {
+    color:  rgb(255, 163, 64);
+    transition: all 0.3s ease-in-out;
+    padding: 3%;
+    border-bottom: 1px solid rgb(255, 163, 64);
+}   
 
 span {
     cursor: pointer;
@@ -75,7 +80,6 @@ span {
         margin: 5%;
         background-color: white;
         border-radius: 10px;
-
     }
 
     .NavBar nav ul li a {
@@ -86,5 +90,10 @@ span {
         opacity: 1;
     }
 
-    
+    .NavList li a:hover, .NavList li span:hover {
+        color:  black;
+        transition: none;
+        padding: 0;
+        border-bottom: none
+    }
 }
