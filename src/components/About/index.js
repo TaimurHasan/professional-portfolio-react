@@ -3,13 +3,11 @@ import React from "react";
 function About() {
     return (
         <div className="main-body">
-            <h3>Hi, I'm Taimur!</h3>
+            <h3 style={{fontStyle: "italic"}}>"It all started with Excel..."</h3>
             <p>
-                I am a Full-Stack Developer in Toronto, Canada 👋 
-                <br/>
-                <br/>
-                I enjoy using my fundamental business knowledge and consumer oriented experiences, along with my knowledge of multiple technical languages, to create exceptional applications and unique solutions. I believe that my background in business has provided me with the perfect balance between cross-functional, collaborative work and a focused 'heads-down' approach to problem-solving.
-            
+                I graduated from the Lazaridis School of Business at Wilfrid Laurier University in 2020. 
+                As a business graduate, I found myself in a finance career, where I really enjoyed making process improvements using Excel Macros and VBA.
+                
             </p>
         </div>
     )

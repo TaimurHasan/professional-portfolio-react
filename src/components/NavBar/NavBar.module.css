@@ -90,4 +90,11 @@ span {
     .NavBar {
         opacity: 1;
     }
+
+    .NavList li a:hover, .NavList li span:hover {
+        color:  black;
+        transition: none;
+        padding: 0;
+        border-bottom: none
+    }
 }
