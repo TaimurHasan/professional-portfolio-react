@@ -34,7 +34,7 @@ function Hero (props) {
                         </div>
                     </div>
                     <div className = {classes.imageContainer}>
-                        <img alt="taimur hasan's headhost" className = {classes.HeroImage} src = "./assets/images/Headshot.jpg" />
+                        <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {require("../../images/Headshot.jpg")} />
                     </div>
                 </div>
             )}   

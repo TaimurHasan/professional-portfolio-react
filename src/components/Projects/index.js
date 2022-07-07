@@ -34,7 +34,7 @@ function Projects () {
             <div className={classes.ProjectWrapper}>
             {
                 projectList.map(( {name, language, description, background, githubUrl, liveLink } ) => (
-                    <div className={classes.ProjectCard} style={{backgroundImage: `url(./assets/images/${name}.png)`, backgroundPosition: `${background}`}}>
+                    <div className={classes.ProjectCard} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${name}.png)`, backgroundPosition: `${background}`}}>
                         <div className={classes.ProjectDetails}>
                             <div className = {classes.ProjectLinks}>
                                 <h4>{name}</h4>
