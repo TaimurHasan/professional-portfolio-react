@@ -42,8 +42,6 @@
 .NavList li a:hover, .NavList li span:hover {
     color:  rgb(255, 163, 64);
     transition: all 0.3s ease-in-out;
-    padding: 3%;
-    border-bottom: 1px solid rgb(255, 163, 64);
 }   
 
 span {
@@ -93,7 +91,5 @@ span {
     .NavList li a:hover, .NavList li span:hover {
         color:  black;
         transition: none;
-        padding: 0;
-        border-bottom: none
     }
 }

@@ -14,9 +14,9 @@ function Hero (props) {
             {currentSection ? (
                 <div className={classes.HeroContent}>
                 <div className = {classes.HeroIntro}>
-                    <h2>{currentSection.description}</h2>
-                    <p></p>
+                    <h2>{currentSection.description}</h2>                    
                 </div>
+
             </div>
             ) : (
                 <div className={classes.HeroContent}>

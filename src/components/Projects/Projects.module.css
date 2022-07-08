@@ -1,12 +1,12 @@
 .ProjectWrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .ProjectCard {
-    height: 400px;
+    height: 450px;
     width: 400px;
     border-radius: 7px;
     display: flex;
@@ -18,14 +18,23 @@
 }
 
 .ProjectCard h4 {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
     font-weight: 1000;
+    padding: 1% 2%;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border-radius: 7px;
+}
+
+.ProjectCard h4:hover {
+    color:hsla(302, 82%, 76%, 1);
+    transition: all 0.3s ease-in-out;
 }
 
 .ProjectCard p {
     margin: 2% 0%;
-    font-size: 18px;
+    font-size: 14px;
     width: 100%;
     font-weight: 1000;
 
@@ -33,20 +42,15 @@
 
 .ProjectDetails {
     width: 100%;
-    height: auto;
+    height: 160px;
     margin: 0;
-    padding: 2% 10%;
+    padding: 2% 5%;
     border-radius: 0 0 7px 7px;
-    background: hsla(31, 90%, 76%, 0.9);
-    background: linear-gradient(10deg, hsla(31, 90%, 76%, 0.9) 0%, hsla(302, 82%, 76%, 0.9) 100%);
-    background: -moz-linear-gradient(10deg, hsla(31, 90%, 76%, 0.9) 0%, hsla(302, 82%, 76%, 0.9) 100%);
-    background: -webkit-linear-gradient(10deg, hsla(31, 90%, 76%, 0.9) 0%, hsla(302, 82%, 76%, 0.9) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1 )
-}
-
-.ProjectDetails:hover {
-    background-color: rgba(0, 0, 0, 0.50);
-    transition: all 0.3s ease-in-out;
+    background: hsla(31, 90%, 76%, 1);
+    background: linear-gradient(10deg, hsla(302, 82%, 76%, 1)  0%, hsla(31, 90%, 76%, 1) 100%);
+    background: -moz-linear-gradient(10deg, hsla(302, 82%, 76%, 1)  0%, hsla(31, 90%, 76%, 1) 100%);
+    background: -webkit-linear-gradient(10deg, hsla(302, 82%, 76%, 1)  0%, hsla(31, 90%, 76%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1 );
 }
 
 .ProjectLinks {
@@ -71,4 +75,10 @@
 
 .LinkDiv {
     display: flex;
+}
+
+@media screen and (min-width: 575px) {
+    .ProjectDetails {
+        height: 140px;
+    }
 }
