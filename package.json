@@ -1,8 +1,8 @@
 {
-  "name": "professional-portfolio-react",
+  "name": "taimurhasandev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://taimurhasan.github.io/professional-portfolio-react",
+  "homepage": "https://taimurhasan.github.io/taimurhasandev/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
