@@ -29,8 +29,8 @@ function Projects () {
         },
         {
             name: "SocialNetworkAPI",
-            technologies: "Express, Node, MongoDB, Mongoose",
-            description: "A NoSQL backend framework, which allows developers to quickly set up a social network application with users, thoughts, friends, and reactions",
+            technologies: "Express, Node, MongoDB",
+            description: "A NoSQL backend framework, which allows developers to quickly set up a social network application with users, thoughts, friends, and reactions.",
             background: "left",
             githubUrl: "https://github.com/TaimurHasan/NoSQLSocialNetworkAPI",
             liveLink: "https://drive.google.com/file/d/1bqiapqHw9yDlO84SPuwPotnY13zmf-oj/view"
