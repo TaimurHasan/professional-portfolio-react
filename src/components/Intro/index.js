@@ -8,8 +8,9 @@ function Intro () {
                 I am a Full-Stack Developer in Toronto, Canada 👋 
                 <br/>
                 <br/>
-                I enjoy using my fundamental business knowledge and consumer oriented experiences, along with my knowledge of multiple technical languages, to create exceptional applications and unique solutions. I believe that my background in business has provided me with the perfect balance between cross-functional, collaborative work and a focused 'heads-down' approach to problem-solving.
-            
+                Thank you for visiting my page! 
+                I am business school graduate and finance professional with a passion for technology and development. I enjoy using my fundamental business knowledge and consumer oriented experiences, 
+                along with my knowledge of multiple technical languages, to create exceptional applications and unique solutions. I believe that my background in business has provided me with the perfect balance between cross-functional, collaborative work and a focused 'heads-down' approach to problem-solving.
             </p>
         </div>
     )

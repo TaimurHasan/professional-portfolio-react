@@ -24,7 +24,7 @@ function Hero (props) {
                         <h2>Full Stack Developer</h2>
                         <p>Currently Senior Finance Analyst @ Align Technology</p>
                         <p>A University of Toronto Full-Stack Development and Wilfrid Laurier Business school graduate with a passion for user-centric and scalable technology.</p>
-                        <div className = {classes.HeroLinks}>
+                        <div className = {classes.HeroLinks}> 
                             <a href="https://www.linkedin.com/in/taimur-h/" target="_blank" rel="noreferrer">
                              <AiFillLinkedin className = {classes.Link} size = "40px" />
                             </a>
