@@ -64,10 +64,10 @@ function Projects () {
                                 <h4>{name}</h4>
                                 <div className={classes.LinkDiv}>
                                     <a title="GitHub Repository" href={`${githubUrl}`} target="_blank" rel="noreferrer">
-                                        <AiFillGithub className = {classes.Link} size='35px'/>
+                                        <AiFillGithub className = {classes.Link} size='30px'/>
                                     </a>
                                     <a title="Live Deployment or Walkthrough" href={`${liveLink}`} target="_blank" rel="noreferrer">
-                                        <AiFillRocket className = {classes.Link} size='35px'/>
+                                        <AiFillRocket className = {classes.Link} size='30px'/>
                                     </a>
                                 </div>
                             </div>

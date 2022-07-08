@@ -6,7 +6,7 @@
 }
 
 .ProjectCard {
-    height: 450px;
+    height: 500px;
     width: 400px;
     border-radius: 7px;
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 .ProjectCard h4 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     font-weight: 1000;
     padding: 1% 2%;
@@ -60,12 +60,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex: 0 30%;
 }
 
-.ProjectLinks a {
-    float: right;
-    padding: 0 5%;
-}
 
 .Link {
     float: right;
@@ -80,8 +77,13 @@
     display: flex;
 }
 
+
 @media screen and (min-width: 575px) {
     .ProjectDetails {
-        height: 140px;
+        height: 160px;
+    }
+
+    .ProjectCard h4 {
+        font-size: 20px;
     }
 }
