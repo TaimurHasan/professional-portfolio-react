@@ -93,3 +93,9 @@ span {
         transition: none;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .NavBar a {
+        flex: 0 60%;
+    }
+}
