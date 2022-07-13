@@ -41,6 +41,7 @@ function NavLinks (props) {
                         onClick={() => {
                             window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
                             setCurrentSection(sections[0])
+                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
                         }}
                     >
                         About
