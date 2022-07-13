@@ -15,7 +15,7 @@ function App() {
   const styles = StyleSheet.create({
     fadeIn: {
         animationName: fadeIn,
-        animationDuration: '1s'
+        animationDuration: '0.3s'
     }
   })
 
