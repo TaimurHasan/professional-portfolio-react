@@ -1,7 +1,10 @@
 import React from "react";
 import classes from "./Projects.module.css"
 import { AiFillGithub, AiFillRocket } from "react-icons/ai"
-function Projects () {
+import { css } from 'aphrodite';
+
+
+function Projects ({ styles }) {
     const projectList = [
         {
             name: "MOAT",
@@ -48,37 +51,37 @@ function Projects () {
             technologies: "Javascript, Third-Party APIs",
             description: "A js application built using data from OpenWeather's API, allowing users to enter a city and view its relevant current and forecasted weather data",
             background: "left",
-            githubUrl: "https://github.com/TaimurHasan/TheWeatherDashboardr",
+            githubUrl: "https://github.com/TaimurHasan/TheWeatherDashboard",
             liveLink: "https://taimurhasan.github.io/TheWeatherDashboard/"
         }
     ]
 
     return (
         <div className="main-body">
-            <div className={classes.ProjectWrapper}>
-            {
-                projectList.map(( {name, technologies, description, background, githubUrl, liveLink } ) => (
-                    <div className={classes.ProjectCard} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${name}.png)`, backgroundPosition: `${background}`}}>
-                        <div className={classes.ProjectDetails}>
-                            <div className = {classes.ProjectLinks}>
-                                <h4>{name}</h4>
-                                <div className={classes.LinkDiv}>
-                                    <a title="GitHub Repository" href={`${githubUrl}`} target="_blank" rel="noreferrer">
-                                        <AiFillGithub className = {classes.Link} size='30px'/>
-                                    </a>
-                                    <a title="Live Deployment or Walkthrough" href={`${liveLink}`} target="_blank" rel="noreferrer">
-                                        <AiFillRocket className = {classes.Link} size='30px'/>
-                                    </a>
+                <div className={`${classes.ProjectWrapper} ${css(styles.fadeIn)}`}>
+                {
+                    projectList.map(( {name, technologies, description, background, githubUrl, liveLink } ) => (
+                        <div className={classes.ProjectCard} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${name}.png)`, backgroundPosition: `${background}`}}>
+                            <div className={classes.ProjectDetails}>
+                                <div className = {classes.ProjectLinks}>
+                                    <h4>{name}</h4>
+                                    <div className={classes.LinkDiv}>
+                                        <a title="GitHub Repository" href={`${githubUrl}`} target="_blank" rel="noreferrer">
+                                            <AiFillGithub className = {classes.Link} size='30px'/>
+                                        </a>
+                                        <a title="Live Deployment or Walkthrough" href={`${liveLink}`} target="_blank" rel="noreferrer">
+                                            <AiFillRocket className = {classes.Link} size='30px'/>
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>{description}</p>
+                                <p>Uses: {technologies}</p>
                             </div>
-                            <p>{description}</p>
-                            <p>Uses: {technologies}</p>
                         </div>
-                    </div>
-                ))
-            }
+                    ))
+                }
+                </div>
             </div>
-        </div>
     )
 }
 

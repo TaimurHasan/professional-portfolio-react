@@ -2,22 +2,23 @@ import React from "react";
 import classes from "./Hero.module.css";
 import { AiFillLinkedin } from "react-icons/ai"
 import { AiFillGithub } from "react-icons/ai"
+import { css } from 'aphrodite';
 
 function Hero (props) {
     const {
-        currentSection
+        currentSection,
+        styles
     } = props;
 
     return (
 
-        <section className={classes.hero}>
+        <section className={`${classes.hero}`}>
             {currentSection ? (
                 <div className={classes.HeroContent}>
-                <div className = {classes.HeroIntro}>
-                    <h2>{currentSection.description}</h2>                    
+                    <div className = {classes.HeroIntro}>
+                        <h2>{currentSection.description}</h2>                    
+                    </div>
                 </div>
-
-            </div>
             ) : (
                 <div className={classes.HeroContent}>
                     <div className = {classes.HeroIntro}>
@@ -39,6 +40,7 @@ function Hero (props) {
                 </div>
             )}   
         </section>
+
     )
 };
 

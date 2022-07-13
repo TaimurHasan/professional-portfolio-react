@@ -1,9 +1,10 @@
 import React from "react";
-import classes from "./About.module.css"
+import classes from "./About.module.css";
+import { css } from 'aphrodite';
 
-function About() {
+function About({ setCurrentSection, styles }) {
     return (
-        <div className="main-body">
+        <div className={`main-body ${css(styles.fadeIn)}`}>
             <h3 style={{fontStyle: "italic"}}>"It all started with Excel..."</h3>
             <p>
                 As a business school graduate, I found myself in a finance career at PepsiCo, where I got to really dive into my interest of creating models and dashboards in Microsoft Excel.
@@ -15,7 +16,12 @@ function About() {
                 I felt like I could never stop learning.<br/><br/>
                 That same feeling is what pushed me to expand my learnings beyond just a spreadsheet software program. With that, I jumped head first into the world of programming, coding, and computer science.
                 <br/><br/>
-                In this portfolio, you will find my journey in the world of Full Stack Development.   
+                In this portfolio, you will find my journey in the world of Full Stack Development.
+                <br/><br/>
+                <span className={classes.WorkLink} onClick={() => {
+                    setCurrentSection({ name: "Work", description: "My Work & Projects"})
+                    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+                    }}>See my projects &rarr;</span>
             </p>
             <h3>My Expertise</h3>
             <ul className={classes.TechnologyList}>

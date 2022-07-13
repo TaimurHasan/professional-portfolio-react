@@ -21,6 +21,7 @@
     justify-content: center;
     padding-right: 4%;
     position: sticky;
+    z-index: 1;
     top: 0;
 }
  
