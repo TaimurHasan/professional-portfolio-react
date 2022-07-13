@@ -34,7 +34,7 @@ function App() {
         currentSection={currentSection}
         setCurrentSection = {setCurrentSection}
       />
-      <Hero currentSection={currentSection} styles={styles}/>
+      <Hero currentSection={currentSection}/>
       {currentSection ? (
         <div>
           {content}

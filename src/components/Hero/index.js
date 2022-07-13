@@ -2,12 +2,10 @@ import React from "react";
 import classes from "./Hero.module.css";
 import { AiFillLinkedin } from "react-icons/ai"
 import { AiFillGithub } from "react-icons/ai"
-import { css } from 'aphrodite';
 
 function Hero (props) {
     const {
-        currentSection,
-        styles
+        currentSection
     } = props;
 
     return (
