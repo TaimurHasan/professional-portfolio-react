@@ -15,6 +15,14 @@ function Projects ({ styles }) {
             liveLink: "https://moatbyoceans11.herokuapp.com/"
         },
         {
+            name: "Cineflex",
+            technologies: "MERN Stack, GraphQL, Apollo",
+            description: "A social network designed for movie lovers to view and post reviews on their favorite films.",
+            background: "left",
+            githubUrl: "https://github.com/Project3MERN/Project-3-MERN",
+            liveLink: "https://frozen-oasis-34307.herokuapp.com/"
+        },
+        {
             name: "TechTalk",
             technologies: "Express, Node, Handlebars, MySQL",
             description: "A social media application to share blog posts with family and friends with using user authentication.",
@@ -30,14 +38,14 @@ function Projects ({ styles }) {
             githubUrl: "https://github.com/TaimurHasan/EmployeeTrackingSystem",
             liveLink: "https://drive.google.com/file/d/1CPpJXRsHzH_tuJkjUKHQ9GjNk0Pf-OMg/view"
         },
-        {
-            name: "SocialNetworkAPI",
-            technologies: "Express, Node, MongoDB",
-            description: "A NoSQL backend framework, which allows developers to quickly set up a social network application with users, thoughts, friends, and reactions.",
-            background: "left",
-            githubUrl: "https://github.com/TaimurHasan/NoSQLSocialNetworkAPI",
-            liveLink: "https://drive.google.com/file/d/1bqiapqHw9yDlO84SPuwPotnY13zmf-oj/view"
-        },
+        // {
+        //     name: "SocialNetworkAPI",
+        //     technologies: "Express, Node, MongoDB",
+        //     description: "A NoSQL backend framework, which allows developers to quickly set up a social network application with users, thoughts, friends, and reactions.",
+        //     background: "left",
+        //     githubUrl: "https://github.com/TaimurHasan/NoSQLSocialNetworkAPI",
+        //     liveLink: "https://drive.google.com/file/d/1bqiapqHw9yDlO84SPuwPotnY13zmf-oj/view"
+        // },
         {
             name: "TeamProfileCreator",
             technologies: "Node, jest, inquirer",
