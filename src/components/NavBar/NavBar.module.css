@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
     background-color: white;
+    font-size: 20px;
 }
 
 .NavBar a {
@@ -19,7 +20,6 @@
 .NavBar .Navigation {
     display: flex;
     justify-content: center;
-    padding-right: 4%;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -50,6 +50,10 @@ span {
 }
 
 @media screen and (max-width: 990px) {
+    .NavBar {
+        font-size: 100%;
+    }
+
     .NavBar .Navigation {
         display: none;
     }

@@ -72,7 +72,11 @@ function Projects ({ styles }) {
                         <div className={classes.ProjectCard} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${name}.png)`, backgroundPosition: `${background}`}}>
                             <div className={classes.ProjectDetails}>
                                 <div className = {classes.ProjectLinks}>
-                                    <h4>{name}</h4>
+                                    <h4>
+                                        <a title="Go To Project" href={`${githubUrl}`} target="_blank" rel="noreferrer">
+                                            {name}
+                                        </a>    
+                                    </h4>
                                     <div className={classes.LinkDiv}>
                                         <a title="GitHub Repository" href={`${githubUrl}`} target="_blank" rel="noreferrer">
                                             <AiFillGithub className = {classes.Link} size='30px'/>

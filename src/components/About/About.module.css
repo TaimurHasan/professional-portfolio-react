@@ -12,3 +12,39 @@
     color: hsla(31, 90%, 76%, 1);
     transition: all 0.3s ease-in-out;
 }
+
+@media screen and (min-width: 990px) {
+    .AboutBody h3{
+        font-size: 52px;
+    }
+    
+    .AboutBody h4{
+        font-size: 52px;
+        width: 40%;
+    }
+
+    .AboutBody p {
+        font-size: 26px;
+    }
+
+    .AboutBody ul {
+        font-size: 26px;
+        width: 40%;
+    }
+
+    .AboutBody ul li:hover {
+        color: hsla(31, 90%, 76%, 1);
+    }
+
+    .SkillDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SkillBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
