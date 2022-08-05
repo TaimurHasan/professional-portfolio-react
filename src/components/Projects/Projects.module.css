@@ -67,6 +67,10 @@
     color: white;
 }
 
+.ProjectLinks h4 a:hover {
+    color: hsla(31, 90%, 76%, 1);
+}
+
 .Link {
     float: right;
 }

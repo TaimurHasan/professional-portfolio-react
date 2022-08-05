@@ -15,20 +15,20 @@
 
 @media screen and (min-width: 990px) {
     .AboutBody h3{
-        font-size: 52px;
+        font-size: 48px;
     }
     
     .AboutBody h4{
-        font-size: 52px;
+        font-size: 48px;
         width: 40%;
     }
 
     .AboutBody p {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .AboutBody ul {
-        font-size: 26px;
+        font-size: 24px;
         width: 40%;
     }
 
