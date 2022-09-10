@@ -63,6 +63,7 @@
         height: 700px;
         padding: 0 8%;
     }
+
     .HeroContent {
         flex-direction: row;
         justify-content: space-between;
@@ -70,7 +71,7 @@
 
     .HeroContent h2 {
         padding: 0;
-        font-size: 95px;
+        font-size: 80px;
         margin: 0;
         text-align: start;
     }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Hero.module.css";
 import { AiFillLinkedin } from "react-icons/ai"
 import { AiFillGithub } from "react-icons/ai"
@@ -10,7 +10,7 @@ function Hero (props) {
 
     return (
 
-        <section className={`${classes.hero}`}>
+        <section className={classes.hero} style = {currentSection && {height: "260px"}}>
             {currentSection ? (
                 <div className={classes.HeroContent} style={{justifyContent:"center"}}>
                     <div className = {classes.HeroIntro}>
