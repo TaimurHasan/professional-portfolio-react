@@ -31,7 +31,7 @@ function Projects ({ styles }) {
             description: "An ecommerce project allowing users to add items to cart and checkout.",
             background: "30%",
             githubUrl: "https://github.com/TaimurHasan/shop-shop",
-            liveLink: "https://frozen-oasis-34307.herokuapp.com/"
+            liveLink: "https://shopshopbytaimur.herokuapp.com/"
         },
         {
             name: "Cineflex",
