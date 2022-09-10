@@ -68,7 +68,7 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.40}}
                 >
-                    <a href="https://drive.google.com/file/d/1dpOg1cYqqt8WWpFyNr_ajZYPDnXvK_x9/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+                    <a href="https://drive.google.com/file/d/1xI91AHdE86uF0fzRqY3DWahNn_ee8FwC/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
                 </motion.li>
             </ul>
     )
