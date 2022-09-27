@@ -7,6 +7,15 @@ import { css } from 'aphrodite';
 function Projects ({ styles }) {
     const projectList = [
         {
+            name: "firedup",
+            keyId: 7,
+            technologies: "MERN Stack, GraphQL",
+            description: "A friend-based social network to encourage and streamline event planning and scheduling.",
+            background: "50%",
+            githubUrl: "https://github.com/TaimurHasan/firedup",
+            liveLink: "https://firedupbytaimur.herokuapp.com/"
+        },
+        {
             name: "MOAT",
             keyId: 1,
             technologies: "Express, Node, Handlebars, MySQL",
@@ -59,15 +68,6 @@ function Projects ({ styles }) {
             background: "left",
             githubUrl: "https://github.com/TaimurHasan/EmployeeTrackingSystem",
             liveLink: "https://drive.google.com/file/d/1CPpJXRsHzH_tuJkjUKHQ9GjNk0Pf-OMg/view"
-        },
-        {
-            name: "SocialNetworkAPI",
-            keyId: 7,
-            technologies: "Express, Node, MongoDB",
-            description: "A NoSQL backend framework, which allows developers to quickly set up a social network application with users, thoughts, friends, and reactions.",
-            background: "left",
-            githubUrl: "https://github.com/TaimurHasan/NoSQLSocialNetworkAPI",
-            liveLink: "https://drive.google.com/file/d/1bqiapqHw9yDlO84SPuwPotnY13zmf-oj/view"
         },
         {
             name: "TeamProfileCreator",
