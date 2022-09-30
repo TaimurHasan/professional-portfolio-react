@@ -23,15 +23,11 @@
     margin: 0;
     font-weight: 1000;
     padding: 1% 2%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #A0AEC0;
     color: white;
     border-radius: 7px;
 }
 
-.ProjectCard h4:hover {
-    color:hsla(302, 82%, 76%, 1);
-    transition: all 0.3s ease-in-out;
-}
 
 .ProjectCard p {
     margin: 2% 0%;
@@ -48,9 +44,10 @@
     width: 100%;
     height: 180px;
     margin: 0;
-    padding: 2% 5%;
+    padding: 2% 4%;
     border-radius: 0 0 7px 7px;
     background: #2D3748;
+    color: white;
 }
 
 .ProjectLinks {
@@ -61,19 +58,23 @@
 }
 
 .ProjectLinks h4 a {
-    color: white;
+    color: black;
 }
 
-.ProjectLinks h4 a:hover {
-    color: hsla(31, 90%, 76%, 1);
+.ProjectLinks h4:hover {
+    color: black;
+    background-color: hsla(31, 90%, 76%, 1);
 }
 
 .Link {
     float: right;
+    color: #A0AEC0;
+    height: 30px;
+    width: 30px;
 }
 
 .Link:hover {
-    color: white;
+    color: hsla(31, 90%, 76%, 1);
     transition: all 0.2s ease-in-out;
 }
 

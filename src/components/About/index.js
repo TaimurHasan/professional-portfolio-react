@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./About.module.css";
 import { css } from 'aphrodite';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 function About({ setCurrentSection, styles }) {
     return (
@@ -19,11 +20,13 @@ function About({ setCurrentSection, styles }) {
                     <br/><br/>
                     I am now proud to call myself a Full Stack Developer, devoted to learning and solving the most challenging problems. In this portfolio, you will find my journey in the world of Full Stack Development.
                     <br/><br/>
-                    <span className={classes.WorkLink} onClick={() => {
-                        setCurrentSection({ name: "Work", description: "My Work & Projects"})
-                        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
-                        }}>See my projects &rarr;</span>
                 </p>
+                <div className={classes.NavBtns}>
+                        <button className={classes.AboutLink}onClick={() => {
+                            setCurrentSection({ name: "Work", description: "My Work & Projects"})
+                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+                        }} >Portfolio <BsFillArrowRightCircleFill className={classes.btnArrow}/></button>
+                    </div>
                 <h3>My Expertise</h3>
                 <div className={classes.SkillDiv}>
                     <div className={classes.SkillBox}>
@@ -39,7 +42,6 @@ function About({ setCurrentSection, styles }) {
                     <div className={classes.SkillBox}>
                         <h4>Backend</h4>
                         <ul className={classes.TechnologyList}>
-                            <li>👾 Python</li>
                             <li>👾 Node.js</li>
                             <li>👾 Express.js</li>
                             <li>👾 RESTful APIs</li>
