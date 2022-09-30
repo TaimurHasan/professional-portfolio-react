@@ -8,7 +8,7 @@
 .ProjectCard {
     height: 500px;
     width: 400px;
-    border-radius: 7px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -25,7 +25,7 @@
     padding: 1% 2%;
     background-color: #A0AEC0;
     color: white;
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 
@@ -45,7 +45,8 @@
     height: 180px;
     margin: 0;
     padding: 2% 4%;
-    border-radius: 0 0 7px 7px;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid #2D3748;
     background: #2D3748;
     color: white;
 }

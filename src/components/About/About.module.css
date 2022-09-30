@@ -2,8 +2,13 @@
     color: white;
 }
 
+span {
+    cursor: text;
+}
+
 .TechnologyList li{
     list-style: none;
+    cursor: default;
 }
 
 .WorkLink {
