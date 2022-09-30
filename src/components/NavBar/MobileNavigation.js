@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 import classes from './NavBar.module.css';
-import { AiOutlineMenu } from 'react-icons/ai';
-import { GrClose } from 'react-icons/gr';
+import { AiOutlineMenu,AiOutlineClose } from 'react-icons/ai';
 
 function MobileNavigation (props) {
     const { 
@@ -12,12 +11,12 @@ function MobileNavigation (props) {
     const [open, setOpen] = useState(false);
 
     const hamburgerIcon = 
-    <AiOutlineMenu className = {classes.Hamburger} size='40px' color='black' 
+    <AiOutlineMenu className = {classes.Hamburger} size='40px'
         onClick={() => setOpen(!open)}
     />
 
     const closeIcon = 
-    <GrClose className = {classes.Hamburger} size='40px' color='black' 
+    <AiOutlineClose className = {classes.Hamburger} size='40px'
         onClick={() => setOpen(!open)}
     />
 

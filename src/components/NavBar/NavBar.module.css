@@ -1,19 +1,22 @@
 .NavBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 8%;
     position: sticky;
     top: 0;
-    background-color: white;
     font-size: 20px;
+    color: white;
+    background-color: #1A202C;
 }
 
 .NavBar a {
     flex: 0 50%;
     cursor: pointer;
+    color: white;
 }
 
 .NavBar h1:hover {
-    color: rgb(255, 163, 64);
+    color: hsla(31, 90%, 76%, 1);
     transition: all 0.2s ease-in-out;
 }
 
@@ -41,7 +44,7 @@
 }
 
 .NavList li a:hover, .NavList li span:hover {
-    color:  rgb(255, 163, 64);
+    color:  hsla(31, 90%, 76%, 1);
     transition: all 0.3s ease-in-out;
 }   
 
@@ -81,7 +84,7 @@ span {
     .NavBar nav ul li {
         float: right;
         margin: 5%;
-        background-color: white;
+        background-color:#2D3748;
         border-radius: 10px;
     }
 

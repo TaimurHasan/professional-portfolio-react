@@ -1,42 +1,39 @@
 .hero {
-    background: hsla(31, 90%, 76%, 1);
-    background: linear-gradient(10deg, hsla(302, 82%, 76%, 1)  0%, hsla(31, 90%, 76%, 1) 100%);
-    background: -moz-linear-gradient(10deg, hsla(302, 82%, 76%, 1)  0%, hsla(31, 90%, 76%, 1) 100%);
-    background: -webkit-linear-gradient(10deg, hsla(302, 82%, 76%, 1)  0%, hsla(31, 90%, 76%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1 );
+    background: #1A202C;
+    color: white;
 }
+
 
 .HeroContent {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100%
 }
 
 .imageContainer {
-    width: 200px;
-    margin: 3% 0;
+    width: 150px;
+    margin: 5% 0;
 }
 .HeroImage {
     border-radius: 50%;
-    border:solid 2px rgb(172, 141, 141);
     width: 100%;
     height: 100%;
 }
 
 .HeroContent h2 {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 1000;
-    text-align: center;
+    text-align: start;
     padding: 0 10%;
+    color: #A0AEC0;
 }
 
 .HeroContent p {
     font-size: 20px;
-    text-align: center;
-    padding: 0 15%;
+    text-align: left;
+    padding: 0 10%;
 }
 
 .HeroIntro {
@@ -51,27 +48,39 @@
 .Link {
     height: 40px;
     width: 40px;
+    color:#A0AEC0;
+    margin: 0 4px;
 }
 
 .Link:hover {
-    color: white;
+    color: hsla(31, 90%, 76%, 1);
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 990px) {
+.HeroContent .HeadingIntro {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10%;
+    color: hsla(31, 90%, 76%, 1);
+}
+
+@media screen and (min-width: 775px) {
     .hero {
-        height: 700px;
+        height: 800px;
         padding: 0 8%;
     }
 
     .HeroContent {
-        flex-direction: row;
-        justify-content: space-between;
+        align-items: start;
+        justify-content: center;
     }
 
     .HeroContent h2 {
         padding: 0;
-        font-size: 80px;
+        font-size: 40px;
+        font-weight: 400;
         margin: 0;
         text-align: start;
     }
@@ -80,15 +89,17 @@
         text-align: start;
         font-size: 24px;
         font-weight: 400;
+        width: 90%;
     }
     
     .HeroIntro {
-        width: 60%;
+        width: 100%;
     }
 
     .imageContainer {
-        width: 400px;
-        margin: 0;
+        display: inline-block;
+        width: 250px;
+        margin: 3% 0;
     }
 
     .Link {
@@ -99,5 +110,14 @@
     .HeroLinks {
         justify-content: flex-start;
         margin: 5% 0;
+    }
+
+    .HeroContent .HeadingIntro {
+        margin-bottom: 2%;
+    }
+
+    .HeroContent .SectionIntro {
+        margin-bottom: 0%;
+        width: 100%;
     }
 }
