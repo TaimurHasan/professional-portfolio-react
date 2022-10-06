@@ -131,7 +131,7 @@ function Projects () {
                             animate={animateTo}
                             key = {keyId}
                             className={classes.ProjectCard}
-                            transition={{ duration: 5 }}
+                            transition={{ duration: 1, delay: delay }}
                             style={{backgroundImage: `url(${image})`, backgroundPosition: `${background}`}}
                         >
                             <div className={classes.ProjectDetails}>
