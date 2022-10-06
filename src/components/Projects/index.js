@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Projects.module.css"
 import { AiFillGithub, AiFillRocket } from "react-icons/ai"
-import { css } from 'aphrodite';
+import {motion} from 'framer-motion';
 
 // project images
 import FiredUp from '../../images/firedup.png'
@@ -15,7 +15,10 @@ import TeamProfileCreator from '../../images/TeamProfileCreator.png'
 import WeatherDashboard from '../../images/WeatherDashboard.png'
 
 
-function Projects ({ styles }) {
+function Projects () {
+    const animateFrom = {opacity: 0}
+    const animateTo = {opacity: 1}
+
     const projectList = [
         {
             name: "firedup",
@@ -25,7 +28,8 @@ function Projects ({ styles }) {
             background: "50%",
             githubUrl: "https://github.com/TaimurHasan/firedup",
             liveLink: "https://firedupbytaimur.herokuapp.com/",
-            image: FiredUp
+            image: FiredUp,
+            delay: 0.20
         },
         {
             name: "MOAT",
@@ -35,7 +39,8 @@ function Projects ({ styles }) {
             background: "45%",
             githubUrl: "https://github.com/utorteam11/MOAT",
             liveLink: "https://moatbyoceans11.herokuapp.com/",
-            image: MOAT
+            image: MOAT,
+            delay: 0.40
         },
         {
             name: "DeepThoughts",
@@ -45,7 +50,8 @@ function Projects ({ styles }) {
             background: "4%",
             githubUrl: "https://github.com/TaimurHasan/deep-thoughts",
             liveLink: "https://deepthoughtsbytaimur.herokuapp.com/",
-            image: DeepThoughts
+            image: DeepThoughts,
+            delay: 0.60
         },
         {
             name: "ShopShop",
@@ -55,7 +61,8 @@ function Projects ({ styles }) {
             background: "30%",
             githubUrl: "https://github.com/TaimurHasan/shop-shop",
             liveLink: "https://shopshopbytaimur.herokuapp.com/",
-            image: ShopShop
+            image: ShopShop,
+            delay: 0.80
         },
         {
             name: "Cineflex",
@@ -65,7 +72,8 @@ function Projects ({ styles }) {
             background: "50%",
             githubUrl: "https://github.com/Project3MERN/Project-3-MERN",
             liveLink: "https://frozen-oasis-34307.herokuapp.com/",
-            image: Cineflex
+            image: Cineflex,
+            delay: 1
         },
         {
             name: "TechTalk",
@@ -75,7 +83,8 @@ function Projects ({ styles }) {
             background: "left",
             githubUrl: "https://github.com/TaimurHasan/TechTalk",
             liveLink: "https://techtalkbytaimur.herokuapp.com/",
-            image: TechTalk
+            image: TechTalk,
+            delay: 1.2
         },
         {
             name: "ETS",
@@ -85,7 +94,8 @@ function Projects ({ styles }) {
             background: "left",
             githubUrl: "https://github.com/TaimurHasan/EmployeeTrackingSystem",
             liveLink: "https://drive.google.com/file/d/1CPpJXRsHzH_tuJkjUKHQ9GjNk0Pf-OMg/view",
-            image: ETS
+            image: ETS,
+            delay: 1.4
         },
         {
             name: "TeamProfileCreator",
@@ -95,7 +105,8 @@ function Projects ({ styles }) {
             background: "left",
             githubUrl: "https://github.com/TaimurHasan/TeamProfileCreator",
             liveLink: "https://drive.google.com/file/d/15AZdnEGZYQ5K82kN9YVn-1ZhG7vHX41N/view",
-            image: TeamProfileCreator
+            image: TeamProfileCreator,
+            delay: 1.6
         },
         {
             name: "WeatherDashboard",
@@ -105,16 +116,24 @@ function Projects ({ styles }) {
             background: "left",
             githubUrl: "https://github.com/TaimurHasan/TheWeatherDashboard",
             liveLink: "https://taimurhasan.github.io/TheWeatherDashboard/",
-            image: WeatherDashboard
+            image: WeatherDashboard,
+            delay: 1.8
         }
     ]
 
     return (
-        <div className="main-body">
-                <div className={`${classes.ProjectWrapper} ${css(styles.fadeIn)}`}>
+        <motion.div initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className="main-body">
+                <div className={`${classes.ProjectWrapper}`}>
                 {
-                    projectList.map(( {name, keyId, technologies, description, background, githubUrl, liveLink, image } ) => (
-                        <div key = {keyId} className={classes.ProjectCard} style={{backgroundImage: `url(${image})`, backgroundPosition: `${background}`}}>
+                    projectList.map(( {name, keyId, technologies, description, background, githubUrl, liveLink, image, delay } ) => (
+                        <motion.div 
+                            initial={animateFrom}
+                            animate={animateTo}
+                            key = {keyId}
+                            className={classes.ProjectCard}
+                            transition={{ duration: 1, delay: delay }}
+                            style={{backgroundImage: `url(${image})`, backgroundPosition: `${background}`}}
+                        >
                             <div className={classes.ProjectDetails}>
                                 <div className = {classes.ProjectLinks}>
                                     <h4>
@@ -134,11 +153,11 @@ function Projects ({ styles }) {
                                 <p>{description}</p>
                                 <p>Uses: {technologies}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))
                 }
                 </div>
-            </div>
+            </motion.div>
     )
 }
 

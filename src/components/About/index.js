@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./About.module.css";
-import { css } from 'aphrodite';
+import {motion} from 'framer-motion';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
-function About({ setCurrentSection, styles }) {
+function About({ setCurrentSection }) {
     return (
-        <div className={`main-body ${css(styles.fadeIn)}`}>
+        <motion.div initial={{opacity: 0, y: -40}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className={`main-body`}>
             <div className={classes.AboutBody}>
                 <h3 style={{fontStyle: "italic"}}>"It all started with Excel..."</h3>
                 <p>
@@ -64,7 +64,7 @@ function About({ setCurrentSection, styles }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 };
 
