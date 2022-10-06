@@ -5,25 +5,16 @@ import Intro from "./components/Intro";
 import Projects from "./components/Projects"
 import Footer from "./components/Footer"
 import About from "./components/About"
-import fadeIn from 'react-animations/lib/fade-in';
-import { StyleSheet } from 'aphrodite';
 
 function App() {
 
   const [currentSection, setCurrentSection ] = useState();
 
-  const styles = StyleSheet.create({
-    fadeIn: {
-        animationName: fadeIn,
-        animationDuration: '1s'
-    }
-  })
-
   let content;
   if (currentSection && currentSection.name === "Work") {
-    content = <Projects styles={styles}/>
+    content = <Projects />
   } else if (currentSection && currentSection.name === "About") {
-    content = <About setCurrentSection = {setCurrentSection} styles={styles}/>
+    content = <About setCurrentSection = {setCurrentSection} />
   }
 
   
@@ -40,7 +31,7 @@ function App() {
           {content}
         </div>
       ) : (
-        <Intro setCurrentSection = {setCurrentSection} styles={styles}/>
+        <Intro setCurrentSection = {setCurrentSection} />
       )}
       <Footer />
     </main>
