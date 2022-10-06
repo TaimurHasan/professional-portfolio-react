@@ -1,13 +1,14 @@
 import React from "react";
 import classes from "./Intro.module.css"
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
-import { css } from 'aphrodite';
+import {motion} from 'framer-motion';
 
-function Intro ({ setCurrentSection, styles }) {
-
+function Intro ({ setCurrentSection }) {
+    const animateFrom = {opacity: 0, x: -40}
+    const animateTo = {opacity: 1, x: 0}
 
     return(
-        <div className={`main-body ${css(styles.fadeIn)}`}>
+        <motion.div initial={animateFrom} animate={animateTo} transition={{duration: 1}} className={`main-body`}>
             <div className={classes.IntroBody}>
                 <h3>About Me</h3>
                 <p>
@@ -27,7 +28,7 @@ function Intro ({ setCurrentSection, styles }) {
                     }} >Portfolio <BsFillArrowRightCircleFill className={classes.btnArrow}/></button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 };
 

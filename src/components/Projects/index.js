@@ -29,7 +29,7 @@ function Projects () {
             githubUrl: "https://github.com/TaimurHasan/firedup",
             liveLink: "https://firedupbytaimur.herokuapp.com/",
             image: FiredUp,
-            delay: 0.10
+            delay: 0.20
         },
         {
             name: "MOAT",
@@ -40,7 +40,7 @@ function Projects () {
             githubUrl: "https://github.com/utorteam11/MOAT",
             liveLink: "https://moatbyoceans11.herokuapp.com/",
             image: MOAT,
-            delay: 0.20
+            delay: 0.40
         },
         {
             name: "DeepThoughts",
@@ -51,7 +51,7 @@ function Projects () {
             githubUrl: "https://github.com/TaimurHasan/deep-thoughts",
             liveLink: "https://deepthoughtsbytaimur.herokuapp.com/",
             image: DeepThoughts,
-            delay: 0.30
+            delay: 0.60
         },
         {
             name: "ShopShop",
@@ -62,7 +62,7 @@ function Projects () {
             githubUrl: "https://github.com/TaimurHasan/shop-shop",
             liveLink: "https://shopshopbytaimur.herokuapp.com/",
             image: ShopShop,
-            delay: 0.40
+            delay: 0.80
         },
         {
             name: "Cineflex",
@@ -73,7 +73,7 @@ function Projects () {
             githubUrl: "https://github.com/Project3MERN/Project-3-MERN",
             liveLink: "https://frozen-oasis-34307.herokuapp.com/",
             image: Cineflex,
-            delay: 0.50
+            delay: 1
         },
         {
             name: "TechTalk",
@@ -84,7 +84,7 @@ function Projects () {
             githubUrl: "https://github.com/TaimurHasan/TechTalk",
             liveLink: "https://techtalkbytaimur.herokuapp.com/",
             image: TechTalk,
-            delay: 0.60
+            delay: 1.2
         },
         {
             name: "ETS",
@@ -95,7 +95,7 @@ function Projects () {
             githubUrl: "https://github.com/TaimurHasan/EmployeeTrackingSystem",
             liveLink: "https://drive.google.com/file/d/1CPpJXRsHzH_tuJkjUKHQ9GjNk0Pf-OMg/view",
             image: ETS,
-            delay: 0.70
+            delay: 1.4
         },
         {
             name: "TeamProfileCreator",
@@ -106,7 +106,7 @@ function Projects () {
             githubUrl: "https://github.com/TaimurHasan/TeamProfileCreator",
             liveLink: "https://drive.google.com/file/d/15AZdnEGZYQ5K82kN9YVn-1ZhG7vHX41N/view",
             image: TeamProfileCreator,
-            delay: 0.80
+            delay: 1.6
         },
         {
             name: "WeatherDashboard",
@@ -117,12 +117,12 @@ function Projects () {
             githubUrl: "https://github.com/TaimurHasan/TheWeatherDashboard",
             liveLink: "https://taimurhasan.github.io/TheWeatherDashboard/",
             image: WeatherDashboard,
-            delay: 0.90
+            delay: 1.8
         }
     ]
 
     return (
-        <div className="main-body">
+        <motion.div initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className="main-body">
                 <div className={`${classes.ProjectWrapper}`}>
                 {
                     projectList.map(( {name, keyId, technologies, description, background, githubUrl, liveLink, image, delay } ) => (
@@ -157,7 +157,7 @@ function Projects () {
                     ))
                 }
                 </div>
-            </div>
+            </motion.div>
     )
 }
 
