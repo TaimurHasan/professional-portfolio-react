@@ -70,7 +70,7 @@ span {
 
     .NavBar .MobileNavigation .Hamburger {
         position: absolute;
-        right: 10.5%;
+        right:7%;
         cursor: pointer;
     }
 
@@ -80,7 +80,7 @@ span {
         position: absolute;
         align-items: flex-end;
         top: 80px;
-        right: 9.5%;
+        right: 6.5%;
     }
 
     .NavBar nav ul li {
