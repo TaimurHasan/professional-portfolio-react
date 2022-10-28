@@ -12,6 +12,10 @@
     height: 100%
 }
 
+.desktopImage {
+    display: none;
+}
+
 .imageContainer {
     width: 150px;
     margin: 5% 0;
@@ -66,15 +70,18 @@
     color: hsla(31, 90%, 76%, 1);
 }
 
+
 @media screen and (min-width: 775px) {
     .hero {
-        height: 800px;
+        height: 600px;
         padding: 0 8%;
     }
 
+
     .HeroContent {
-        align-items: start;
+        align-items: center;
         justify-content: center;
+        flex-direction: row;
     }
 
     .HeroContent h2 {
@@ -97,9 +104,14 @@
     }
 
     .imageContainer {
-        display: inline-block;
-        width: 250px;
+        display: flex;
+        align-items: center;
+        width: 300px;
         margin: 3% 0;
+    }
+    
+    .mobileImage {
+        display: none;
     }
 
     .Link {
@@ -125,5 +137,12 @@
     .HeroContent .SectionIntro {
         margin-bottom: 0%;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .hero {
+        height: 400px;
+        margin: 5% 0;
     }
 }

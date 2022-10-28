@@ -23,13 +23,13 @@ function Hero (props) {
                 </div>
             ) : (
                 <motion.div initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className={classes.HeroContent}>
-                    <div className = {classes.imageContainer}>
+                    <div className = {`${classes.imageContainer} ${classes.mobileImage}`}>
                         <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {headshot} />
                     </div>
                     <div className = {classes.HeroIntro}>
                         <h2 className={classes.typeAnimation}>👋 Hi, I'm Taimur</h2>
                         <h2 className={classes.HeadingIntro}>Full Stack Engineer</h2>
-                        <p>Currently Senior Analyst @ Align Technology</p>
+                        <p>Currently Frontend Developer @ DormIt</p>
                         <p>A University of Toronto Full-Stack Development and Wilfrid Laurier Business school graduate with a passion for user-centric and scalable technology.</p>
                         <div className = {classes.HeroLinks}> 
                             <a href="https://www.linkedin.com/in/taimur-h/" title="LinkedIn" target="_blank" rel="noreferrer">
@@ -45,6 +45,9 @@ function Hero (props) {
                              <HiOutlineMail className = {classes.Link}  />
                             </a>
                         </div>
+                    </div>
+                    <div className = {`${classes.imageContainer} ${classes.desktopImage}`}>
+                        <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {headshot} />
                     </div>
                 </motion.div>
             )}   
