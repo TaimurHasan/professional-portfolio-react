@@ -4,18 +4,19 @@
     align-items: flex-end;
 }
 
-
 .AboutLink {
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
-    padding: 4%;
+    padding: 4% 2%;
     width: 60%;
     margin: 9px 0 ;
     font-style: italic;
     font-size: 18px;
     border-radius: 40px;
     border: none;
+    font-weight: 800;
     background-color: #2D3748;
     color: hsla(31, 90%, 76%, 1);
 }
@@ -38,6 +39,10 @@
 .IntroBody p {
     color: white;
     padding: 0% 1%;
+}
+
+.projectStart {
+    margin-bottom: 110px;
 }
 
 @media screen and (min-width: 775px) {

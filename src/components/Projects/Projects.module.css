@@ -1,3 +1,10 @@
+.projectHeader {
+    padding: 0% 1%;
+    margin-top: 0;
+    font-size: 40px;
+    color: hsla(31, 90%, 76%, 1);
+}
+
 .ProjectWrapper {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +90,10 @@
     display: flex;
 }
 
+.storyStart {
+    margin-bottom: 110px;
+}
+
 
 @media screen and (min-width: 575px) {
     .ProjectDetails {
@@ -91,5 +102,15 @@
 
     .ProjectCard h4 {
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 775px) {
+
+    .projectHeader{
+        font-size: 54px;
+        margin: 3% 0;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 }

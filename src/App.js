@@ -26,13 +26,16 @@ function App() {
         setCurrentSection = {setCurrentSection}
       />
       <Hero currentSection={currentSection}/>
-      {currentSection ? (
+      <Intro setCurrentSection = {setCurrentSection} />
+      <Projects />
+      <About setCurrentSection = {setCurrentSection} />
+      {/* {currentSection ? (
         <div>
           {content}
         </div>
       ) : (
         <Intro setCurrentSection = {setCurrentSection} />
-      )}
+      )} */}
       <Footer />
     </main>
   );

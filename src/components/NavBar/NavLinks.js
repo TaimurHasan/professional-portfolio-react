@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import {motion} from 'framer-motion'
 import classes from './NavBar.module.css'
+import { Link } from 'react-scroll';
 
 function NavLinks (props) {
     const animateFrom = {opacity: 0, y: -40, padding: 13}
@@ -20,6 +21,10 @@ function NavLinks (props) {
         }
     ])
     
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 
     return (
             <ul className={classes.NavList}>
@@ -29,7 +34,13 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.10}}
                 >
-                    <a href="./">Home</a>
+                    <span 
+                        onClick={() => {
+                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+                        }}
+                    >
+                        Home
+                    </span>
                 </motion.li>
                 <motion.li 
                     onClick={() => props.isMobile && props.closeMobileMenu()}
@@ -37,15 +48,9 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.20}}
                 >
-                    <span 
-                        onClick={() => {
-                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
-                            setCurrentSection(sections[0])
-                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
-                        }}
-                    >
+                    <Link onClick={() => props.isMobile && props.closeMobileMenu()} to="about" spy={true} smooth={true}> 
                         About
-                    </span>
+                    </Link>
                 </motion.li>
                 <motion.li 
                     onClick={() => props.isMobile && props.closeMobileMenu()}
@@ -53,14 +58,9 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.30}}
                 >
-                    <span
-                        onClick={() => {
-                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-                            setCurrentSection(sections[1])
-                        }}
-                    >
-                        Work
-                    </span>
+                    <Link onClick={() => props.isMobile && props.closeMobileMenu()} to="projects" spy={true} smooth={true}> 
+                        Projects
+                    </Link>
                 </motion.li>
                 <motion.li 
                     onClick={() => props.isMobile && props.closeMobileMenu()}

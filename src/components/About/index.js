@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./About.module.css";
 import {motion} from 'framer-motion';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 function About({ setCurrentSection }) {
     return (
@@ -21,12 +22,6 @@ function About({ setCurrentSection }) {
                     I am now proud to call myself a <span style={{color: "hsla(31, 90%, 76%, 1)", fontWeight:"bold"}}> Full Stack Engineer</span>, devoted to learning and solving the most challenging problems. In this portfolio, you will find my journey in the world of software.
                     <br/><br/>
                 </p>
-                <div className={classes.NavBtns}>
-                        <button className={classes.AboutLink}onClick={() => {
-                            setCurrentSection({ name: "Work", description: "My Work & Projects"})
-                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
-                        }} >Portfolio <BsFillArrowRightCircleFill className={classes.btnArrow}/></button>
-                    </div>
                 <h3>My Expertise</h3>
                 <div className={classes.SkillDiv}>
                     <div className={classes.SkillBox}>

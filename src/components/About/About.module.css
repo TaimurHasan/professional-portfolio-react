@@ -2,6 +2,10 @@
     color: white;
 }
 
+.AboutBody h3 {
+    color: hsla(31, 90%, 76%, 1);
+}
+
 .TechnologyList li{
     list-style: none;
     cursor: default;
@@ -59,11 +63,11 @@
 
 @media screen and (min-width: 990px) {
     .AboutBody h3{
-        font-size: 48px;
+        font-size: 44px;
     }
     
     .AboutBody h4{
-        font-size: 48px;
+        font-size: 44px;
         width: 40%;
     }
 
