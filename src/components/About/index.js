@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
-function About({ setCurrentSection }) {
+function About() {
     return (
         <motion.div initial={{opacity: 0, y: -40}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className={`main-body`}>
             <div className={classes.AboutBody}>

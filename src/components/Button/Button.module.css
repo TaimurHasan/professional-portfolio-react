@@ -1,0 +1,38 @@
+.NavBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 8%;
+    width: 100%;
+}
+
+.AboutLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 4% 2%;
+    width: 60%;
+    margin: 9px 0 ;
+    font-size: 18px;
+    border-radius: 40px;
+    border: none;
+    background-color: #2D3748;
+    color: hsla(31, 90%, 76%, 1);
+}
+
+.btnArrow {
+    margin-left: 10px;
+}
+.AboutLinkClicked {
+    color: black;
+    background-color: hsla(31, 90%, 76%, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 775px) {
+    .AboutLink {
+        padding: 12px;
+        width: 30%;
+    }
+}

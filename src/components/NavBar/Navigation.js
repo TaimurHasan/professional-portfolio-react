@@ -2,14 +2,11 @@ import React from "react";
 import NavLinks from "./NavLinks";
 import classes from './NavBar.module.css';
 
-function Navigation (props) {
-    const {
-        setCurrentSection
-    } = props;
+function Navigation ({ showAbout }) {
 
     return (
         <nav className={classes.Navigation}>
-            <NavLinks setCurrentSection={setCurrentSection}/>
+            <NavLinks showAbout={showAbout}/>
         </nav>
     );
 };

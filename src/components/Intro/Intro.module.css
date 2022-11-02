@@ -1,35 +1,3 @@
-.NavBtns {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.AboutLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 4% 2%;
-    width: 60%;
-    margin: 9px 0 ;
-    font-style: italic;
-    font-size: 18px;
-    border-radius: 40px;
-    border: none;
-    font-weight: 800;
-    background-color: #2D3748;
-    color: hsla(31, 90%, 76%, 1);
-}
-
-.btnArrow {
-    margin-left: 10px;
-}
-.AboutLink:hover {
-    color: black;
-    background-color: hsla(31, 90%, 76%, 1);
-    transition: all 0.3s ease-in-out;
-}
-
 .IntroBody h3 {
     padding: 0% 1%;
     margin-top: 0;
@@ -60,8 +28,4 @@
         padding-right: 0%;
     }
 
-    .AboutLink {
-        padding: 12px;
-        width: 30%;
-    }
 }

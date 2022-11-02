@@ -3,10 +3,7 @@ import NavLinks from "./NavLinks";
 import classes from './NavBar.module.css';
 import { AiOutlineMenu,AiOutlineClose } from 'react-icons/ai';
 
-function MobileNavigation (props) {
-    const { 
-        setCurrentSection
-    } = props;
+function MobileNavigation ({ showAbout }) {
 
     const [open, setOpen] = useState(false);
 
@@ -26,7 +23,7 @@ function MobileNavigation (props) {
     return (
         <nav className={classes.MobileNavigation}>
             {open ? closeIcon : hamburgerIcon}
-            {open && <NavLinks setCurrentSection={setCurrentSection} isMobile={true} closeMobileMenu={closeMobileMenu}/>}
+            {open && <NavLinks showAbout={showAbout} isMobile={true} closeMobileMenu={closeMobileMenu}/>}
         </nav>
     )
 }

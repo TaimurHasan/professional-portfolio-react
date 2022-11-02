@@ -90,10 +90,6 @@
     display: flex;
 }
 
-.storyStart {
-    margin-bottom: 110px;
-}
-
 
 @media screen and (min-width: 575px) {
     .ProjectDetails {

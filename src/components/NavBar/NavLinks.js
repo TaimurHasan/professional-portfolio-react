@@ -7,25 +7,6 @@ function NavLinks (props) {
     const animateFrom = {opacity: 0, y: -40, padding: 13}
     const animateTo = {opacity: 1, y: 0, padding: 13}
 
-    const {
-        setCurrentSection
-    } = props;
-
-    const [sections] = useState([
-        { 
-          name: 'About',
-          description: 'About Me' 
-        },
-        { name: 'Work',
-          description: 'My Work & Projects' 
-        }
-    ])
-    
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-
     return (
             <ul className={classes.NavList}>
                 <motion.li 
@@ -58,7 +39,7 @@ function NavLinks (props) {
                     animate={animateTo}
                     transition={{delay: 0.30}}
                 >
-                    <Link onClick={() => props.isMobile && props.closeMobileMenu()} to="projects" spy={true} smooth={true}> 
+                    <Link onClick={() => props.isMobile && props.closeMobileMenu()} to={props.showAbout ? "projects" : "button"} spy={true} smooth={true}> 
                         Projects
                     </Link>
                 </motion.li>

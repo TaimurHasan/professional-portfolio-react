@@ -123,7 +123,7 @@ function Projects () {
 
     return (
         <motion.div initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className="main-body">
-                <h2 className={classes.projectHeader}>Projects</h2>
+                <h2 id="projects" className={classes.projectHeader}>Top Projects</h2>
                 <div className={`${classes.ProjectWrapper}`}>
                 {
                     projectList.map(( {name, keyId, technologies, description, background, githubUrl, liveLink, image, delay } ) => (
@@ -158,7 +158,6 @@ function Projects () {
                     ))
                 }
                 </div>
-                <div id="story" className={classes.storyStart}></div> 
         </motion.div>
     )
 }

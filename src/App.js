@@ -5,30 +5,19 @@ import Intro from "./components/Intro";
 import Projects from "./components/Projects"
 import Footer from "./components/Footer"
 import About from "./components/About"
+import Button from "./components/Button";
 
 function App() {
-
-  const [currentSection, setCurrentSection ] = useState();
-
-  let content;
-  if (currentSection && currentSection.name === "Work") {
-    content = <Projects />
-  } else if (currentSection && currentSection.name === "About") {
-    content = <About setCurrentSection = {setCurrentSection} />
-  }
-
-  
+  const [showAbout, setShowAbout] = useState(false);
 
   return (
     <main>
-      <NavBar 
-        currentSection={currentSection}
-        setCurrentSection = {setCurrentSection}
-      />
-      <Hero currentSection={currentSection}/>
-      <Intro setCurrentSection = {setCurrentSection} />
+      <NavBar showAbout={showAbout}/>
+      <Hero/>
+      <Intro />
+      <Button  showAbout={showAbout} setShowAbout={setShowAbout}/>
+      {showAbout && <About />}
       <Projects />
-      <About setCurrentSection = {setCurrentSection} />
       {/* {currentSection ? (
         <div>
           {content}

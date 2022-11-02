@@ -5,23 +5,11 @@ import { HiOutlineMail } from "react-icons/hi"
 import headshot from '../../images/Headshot.jpg'
 import {motion} from 'framer-motion';
 
-function Hero (props) {
-
-
-    const {
-        currentSection
-    } = props;
+function Hero () {
 
     return (
 
-        <section className={classes.hero} style = {currentSection && {height: "260px"}}>
-            {currentSection ? (
-                <div className={classes.HeroContent} style={{justifyContent:"center"}}>
-                    <div className = {classes.HeroIntro}>
-                        <h2 className={`${classes.HeadingIntro} ${classes.SectionIntro}`} style={{textAlign: "center"}}>{currentSection.description}</h2>                    
-                    </div>
-                </div>
-            ) : (
+        <section className={classes.hero}>
                 <motion.div initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className={classes.HeroContent}>
                     <div className = {`${classes.imageContainer} ${classes.mobileImage}`}>
                         <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {headshot} />
@@ -49,8 +37,7 @@ function Hero (props) {
                     <div className = {`${classes.imageContainer} ${classes.desktopImage}`}>
                         <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {headshot} />
                     </div>
-                </motion.div>
-            )}   
+                </motion.div> 
         </section>
 
     )

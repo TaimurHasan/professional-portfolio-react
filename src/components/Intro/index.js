@@ -1,10 +1,9 @@
 import React from "react";
 import classes from "./Intro.module.css"
-import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import About from "../About";
 import {motion} from 'framer-motion';
-import { Link } from 'react-scroll';
 
-function Intro ({ setCurrentSection }) {
+function Intro () {
     const animateFrom = {opacity: 0, x: -40}
     const animateTo = {opacity: 1, x: 0}
 
@@ -18,14 +17,7 @@ function Intro ({ setCurrentSection }) {
                     <br/>
                     I am also a business school graduate and finance professional with years of experience in leading corporate process improvements, tool building, and system integrations.
                 </p>
-                <div className={classes.NavBtns}>
-                    <Link className={classes.AboutLink} to="story" spy={true} smooth={true}> 
-                            More about me 
-                            <BsFillArrowRightCircleFill className={classes.btnArrow}/>
-                    </Link>
-                </div>
             </div>
-            <div className={classes.projectStart} id="projects"></div>
         </motion.div>
     )
 };
