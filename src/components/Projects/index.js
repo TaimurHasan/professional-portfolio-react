@@ -7,12 +7,12 @@ import {motion} from 'framer-motion';
 import FiredUp from '../../images/firedup.png'
 import MOAT from '../../images/MOAT.png'
 import DeepThoughts from '../../images/DeepThoughts.png'
-import ShopShop from '../../images/ShopShop.png'
-import Cineflex from '../../images/Cineflex.png'
-import ETS from '../../images/ETS.png'
-import TechTalk from '../../images/TechTalk.png'
-import TeamProfileCreator from '../../images/TeamProfileCreator.png'
-import WeatherDashboard from '../../images/WeatherDashboard.png'
+// import ShopShop from '../../images/ShopShop.png'
+// import Cineflex from '../../images/Cineflex.png'
+// import ETS from '../../images/ETS.png'
+// import TechTalk from '../../images/TechTalk.png'
+// import TeamProfileCreator from '../../images/TeamProfileCreator.png'
+// import WeatherDashboard from '../../images/WeatherDashboard.png'
 
 
 function Projects () {
@@ -122,7 +122,7 @@ function Projects () {
     ]
 
     return (
-        <motion.div initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className="main-body">
+        <motion.div initial={{opacity: 0, x: -40}} animate={{opacity: 1, x: 0}} transition={{duration: 1}} className="main-body">
                 <h2 id="projects" className={classes.projectHeader}>Top Projects</h2>
                 <div className={`${classes.ProjectWrapper}`}>
                 {

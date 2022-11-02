@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./About.module.css";
 import {motion} from 'framer-motion';
-import { BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { Link } from 'react-scroll';
 
 function About() {
     return (

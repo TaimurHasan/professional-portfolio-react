@@ -43,7 +43,7 @@ a {
 }
 
 .main-body {
-  margin: 10% 10%;
+  margin: 10% 10% 5% 10%;
   min-height: auto;
 }
 
@@ -60,7 +60,7 @@ a {
 
 @media screen and (min-width: 775px) {
   .main-body {
-    margin: 5% 8%;
+    margin: 5% 8% 0% 8%;
   }
 }
 

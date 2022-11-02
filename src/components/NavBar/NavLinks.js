@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import {motion} from 'framer-motion'
 import classes from './NavBar.module.css'
 import { Link } from 'react-scroll';

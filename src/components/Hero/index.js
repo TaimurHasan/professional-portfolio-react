@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Hero.module.css";
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterSquare } from "react-icons/ai"
 import { HiOutlineMail } from "react-icons/hi"
-import headshot from '../../images/Headshot.jpg'
+import headshot from '../../images/Headshot.webp'
 import {motion} from 'framer-motion';
 
 function Hero () {

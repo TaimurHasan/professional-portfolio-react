@@ -13,6 +13,15 @@
     margin-bottom: 110px;
 }
 
+.logo {
+    font-size: 50px;
+    margin-right: 1%;
+}
+
+.logo:hover {
+    color: hsla(31, 90%, 76%, 1);
+}
+
 @media screen and (min-width: 775px) {
 
     .IntroBody h3{
