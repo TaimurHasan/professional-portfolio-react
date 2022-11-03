@@ -50,7 +50,9 @@
     .introCode {
         display: flex;
         width: 50%;
-        padding-right: 4%;
+        margin-right: 4%;
+        border-radius: 10px;
+        background:#000;
     }
 
     .aboutHeading{
@@ -75,5 +77,9 @@
 
     .IntroBody {
         width: 50%;
+    }
+
+    .projectStart {
+        margin-bottom: 200px;
     }
 }

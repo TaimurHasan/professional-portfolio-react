@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Button = ({ showAbout, setShowAbout }) => {
     return(
-        <div id="button" className={classes.NavBtns}>
+        <div className={classes.NavBtns}>
             <Link to={showAbout ? "about" : "button"} smooth={true} className={`${classes.AboutLink} ${showAbout && classes.AboutLinkClicked}`} onClick={() => setShowAbout(!showAbout)}> 
                     {showAbout ? (
                         <>

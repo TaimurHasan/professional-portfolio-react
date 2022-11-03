@@ -19,7 +19,7 @@ function Hero () {
                         <h2 className={classes.HeadingIntro}>Full Stack Engineer</h2>
                         <p>Currently Frontend Developer @ DormIt</p>
                         <p>A University of Toronto Full-Stack Development and Wilfrid Laurier Business school graduate with a passion for user-centric and scalable technology.</p>
-                        <div id="about" className = {classes.HeroLinks}> 
+                        <div className = {classes.HeroLinks}> 
                             <a href="https://www.linkedin.com/in/taimur-h/" title="LinkedIn" target="_blank" rel="noreferrer">
                              <AiFillLinkedin className = {classes.Link} style={{marginLeft:"0px"}}/>
                             </a>
@@ -37,7 +37,8 @@ function Hero () {
                     <div className = {`${classes.imageContainer} ${classes.desktopImage}`}>
                         <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {headshot} />
                     </div>
-                </motion.div> 
+                </motion.div>
+                <div className={classes.aboutStart} id="about"></div>
         </section>
 
     )

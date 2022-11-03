@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Projects.module.css"
-import { AiFillGithub, AiFillRocket } from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai"
 import {motion} from 'framer-motion';
 
 // project images
@@ -123,7 +123,7 @@ function Projects () {
 
     return (
         <motion.div initial={{opacity: 0, x: -40}} animate={{opacity: 1, x: 0}} transition={{duration: 1}} className="main-body">
-                <h2 id="projects" className={classes.projectHeader}>Top Projects</h2>
+                <h2 className={classes.projectHeader}>Top Projects</h2>
                 <div className={`${classes.ProjectWrapper}`}>
                 {
                     projectList.map(( {name, keyId, technologies, description, background, githubUrl, liveLink, image, delay } ) => (
@@ -138,16 +138,13 @@ function Projects () {
                             <div className={classes.ProjectDetails}>
                                 <div className = {classes.ProjectLinks}>
                                     <h4>
-                                        <a title="Go To Project" href={`${githubUrl}`} target="_blank" rel="noreferrer">
+                                        <a title="Go To Project" href={`${liveLink}`} target="_blank" rel="noreferrer">
                                             {name}
                                         </a>    
                                     </h4>
                                     <div className={classes.LinkDiv}>
                                         <a title="GitHub Repository" href={`${githubUrl}`} target="_blank" rel="noreferrer">
                                             <AiFillGithub className = {classes.Link}/>
-                                        </a>
-                                        <a title="Live Deployment or Walkthrough" href={`${liveLink}`} target="_blank" rel="noreferrer">
-                                            <AiFillRocket className = {classes.Link}/>
                                         </a>
                                     </div>
                                 </div>

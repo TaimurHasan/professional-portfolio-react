@@ -70,6 +70,9 @@
     color: hsla(31, 90%, 76%, 1);
 }
 
+.aboutStart {
+    margin-bottom: 100px;
+}
 
 @media screen and (min-width: 775px) {
     .hero {

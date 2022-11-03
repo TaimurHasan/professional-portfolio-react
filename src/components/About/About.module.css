@@ -53,6 +53,10 @@
     transition: all 0.3s ease-in-out;
 }
 
+.projectStart {
+    margin-bottom: 100px;
+}
+
 @media screen and (min-width: 775px) {
 
     .AboutLink {
@@ -97,4 +101,7 @@
         flex-direction: column;
     }
 
+    .projectStart {
+        margin-bottom: 0px;
+    }
 }

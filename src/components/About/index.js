@@ -57,6 +57,7 @@ function About() {
                     </div>
                 </div>
             </div>
+            <div className={classes.projectStart} id="projects"></div>
         </motion.div>
     )
 };

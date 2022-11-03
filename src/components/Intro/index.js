@@ -37,6 +37,7 @@ function Intro ({ showAbout, setShowAbout }) {
                     <DiMongodb className={classes.logo} />
                 </div> */}
             </div>
+            <div className={classes.projectStart} id="button"></div>
         </motion.div>
     )
 };
