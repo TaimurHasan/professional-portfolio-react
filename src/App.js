@@ -14,8 +14,7 @@ function App() {
     <main>
       <NavBar showAbout={showAbout}/>
       <Hero/>
-      <Intro />
-      <Button  showAbout={showAbout} setShowAbout={setShowAbout}/>
+      <Intro showAbout={showAbout} setShowAbout={setShowAbout}/>
       {showAbout && <About />}
       <Projects />
       {/* {currentSection ? (
