@@ -17,10 +17,10 @@ function About() {
                     I felt like I could never stop learning.<br/><br/>
                     That exact feeling is what pushed me to expand my learnings beyond just a spreadsheet software program. With that, I jumped head first into the world of programming, coding, and computer science.
                     <br/><br/>
-                    I am now proud to call myself a <span style={{color: "hsla(31, 90%, 76%, 1)", fontWeight:"bold"}}> Full Stack Engineer</span>, devoted to learning and solving the most challenging problems. In this portfolio, you will find my journey in the world of software.
+                    I am now proud to call myself a <span style={{cursor: "text", color: "hsla(31, 90%, 76%, 1)", fontWeight:"bold"}}> Full Stack Engineer</span>, devoted to learning and solving the most challenging problems. In this portfolio, you will find my journey in the world of software.
                     <br/><br/>
                 </p>
-                <h3>My Expertise</h3>
+                <h3>My Technologies</h3>
                 <div className={classes.SkillDiv}>
                     <div className={classes.SkillBox}>
                         <h4>Frontend</h4>

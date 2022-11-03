@@ -5,8 +5,8 @@ import {motion} from 'framer-motion';
 
 // project images
 import FiredUp from '../../images/firedup.png'
-import MOAT from '../../images/MOAT.png'
-import DeepThoughts from '../../images/DeepThoughts.png'
+import MOAT from '../../images/MOAT.webp'
+import DeepThoughts from '../../images/DeepThoughts.webp'
 // import ShopShop from '../../images/ShopShop.png'
 // import Cineflex from '../../images/Cineflex.png'
 // import ETS from '../../images/ETS.png'
