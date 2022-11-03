@@ -1,24 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.40c9e69d.css",
-    "main.js": "/static/js/main.9171b9f4.js",
+    "main.css": "/static/css/main.d5afdc03.css",
+    "main.js": "/static/js/main.fdb3e364.js",
     "static/js/787.12f97332.chunk.js": "/static/js/787.12f97332.chunk.js",
-    "static/media/ShopShop.png": "/static/media/ShopShop.ec4a0d28f23c2ad18b9e.png",
-    "static/media/WeatherDashboard.png": "/static/media/WeatherDashboard.e637330a631c412b55d0.png",
-    "static/media/TechTalk.png": "/static/media/TechTalk.6215a49019536deb7f72.png",
-    "static/media/TeamProfileCreator.png": "/static/media/TeamProfileCreator.336938c24a78683bbdd6.png",
-    "static/media/Headshot.jpg": "/static/media/Headshot.8de5e6bdf701ab33d8a2.jpg",
-    "static/media/DeepThoughts.png": "/static/media/DeepThoughts.423d572547aee0567848.png",
-    "static/media/Cineflex.png": "/static/media/Cineflex.16a836a5adc743bb26b8.png",
-    "static/media/firedup.png": "/static/media/firedup.5da2294933329ec1b031.png",
-    "static/media/MOAT.png": "/static/media/MOAT.e1ed136809d463321ffc.png",
+    "static/media/Headshot.webp": "/static/media/Headshot.a1743d3b6977e7f9dc71.webp",
+    "static/media/DeepThoughts.webp": "/static/media/DeepThoughts.88cde950ebe591dca8a0.webp",
+    "static/media/taimurIntro.webp": "/static/media/taimurIntro.a03187f4052744b3a745.webp",
+    "static/media/MOAT.webp": "/static/media/MOAT.5787a0d84acd9b7c28ce.webp",
+    "static/media/firedup.webp": "/static/media/firedup.801ae4da9ebd8ba43156.webp",
     "index.html": "/index.html",
-    "main.40c9e69d.css.map": "/static/css/main.40c9e69d.css.map",
-    "main.9171b9f4.js.map": "/static/js/main.9171b9f4.js.map",
+    "main.d5afdc03.css.map": "/static/css/main.d5afdc03.css.map",
+    "main.fdb3e364.js.map": "/static/js/main.fdb3e364.js.map",
     "787.12f97332.chunk.js.map": "/static/js/787.12f97332.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40c9e69d.css",
-    "static/js/main.9171b9f4.js"
+    "static/css/main.d5afdc03.css",
+    "static/js/main.fdb3e364.js"
   ]
 }
