@@ -5,7 +5,6 @@ import Intro from "./components/Intro";
 import Projects from "./components/Projects"
 import Footer from "./components/Footer"
 import About from "./components/About"
-import Button from "./components/Button";
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
