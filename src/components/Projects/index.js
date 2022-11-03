@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai"
 import {motion} from 'framer-motion';
 
 // project images
-import FiredUp from '../../images/firedup.png'
+import FiredUp from '../../images/firedup.webp'
 import MOAT from '../../images/MOAT.webp'
 import DeepThoughts from '../../images/DeepThoughts.webp'
 // import ShopShop from '../../images/ShopShop.png'
