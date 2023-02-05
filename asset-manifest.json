@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5afdc03.css",
-    "main.js": "/static/js/main.fdb3e364.js",
+    "main.css": "/static/css/main.8ee54c82.css",
+    "main.js": "/static/js/main.db0d4632.js",
     "static/js/787.12f97332.chunk.js": "/static/js/787.12f97332.chunk.js",
     "static/media/Headshot.webp": "/static/media/Headshot.a1743d3b6977e7f9dc71.webp",
     "static/media/DeepThoughts.webp": "/static/media/DeepThoughts.88cde950ebe591dca8a0.webp",
@@ -9,12 +9,12 @@
     "static/media/MOAT.webp": "/static/media/MOAT.5787a0d84acd9b7c28ce.webp",
     "static/media/firedup.webp": "/static/media/firedup.801ae4da9ebd8ba43156.webp",
     "index.html": "/index.html",
-    "main.d5afdc03.css.map": "/static/css/main.d5afdc03.css.map",
-    "main.fdb3e364.js.map": "/static/js/main.fdb3e364.js.map",
+    "main.8ee54c82.css.map": "/static/css/main.8ee54c82.css.map",
+    "main.db0d4632.js.map": "/static/js/main.db0d4632.js.map",
     "787.12f97332.chunk.js.map": "/static/js/787.12f97332.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5afdc03.css",
-    "static/js/main.fdb3e364.js"
+    "static/css/main.8ee54c82.css",
+    "static/js/main.db0d4632.js"
   ]
 }
