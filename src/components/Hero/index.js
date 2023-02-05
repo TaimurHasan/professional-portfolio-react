@@ -17,7 +17,7 @@ function Hero () {
                     <div className = {classes.HeroIntro}>
                         <h2 className={classes.typeAnimation}>👋 Hi, I'm Taimur</h2>
                         <h2 className={classes.HeadingIntro}>Full Stack Engineer</h2>
-                        <p>Currently Frontend Developer @ DormIt</p>
+                        <p>Currently Full Stack Engineer @ Manulife</p>
                         <p>A University of Toronto Full-Stack Development and Wilfrid Laurier Business school graduate with a passion for user-centric and scalable technology.</p>
                         <div className = {classes.HeroLinks}> 
                             <a href="https://www.linkedin.com/in/taimur-h/" title="LinkedIn" target="_blank" rel="noreferrer">

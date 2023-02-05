@@ -27,7 +27,7 @@ function Projects () {
             description: "A friend-based social network to encourage and streamline event planning and scheduling.",
             background: "50%",
             githubUrl: "https://github.com/TaimurHasan/firedup",
-            liveLink: "https://firedupbytaimur.herokuapp.com/",
+            liveLink: "https://firedup-production.up.railway.app/",
             image: FiredUp,
             delay: 0.20
         },
@@ -124,6 +124,7 @@ function Projects () {
     return (
         <motion.div initial={{opacity: 0, x: -40}} animate={{opacity: 1, x: 0}} transition={{duration: 1}} className="main-body">
                 <h2 className={classes.projectHeader}>Top Projects</h2>
+                <p>Note: Due to Heroku's removal of the free project tier, some projects are being refactored for alternative deployments and may be temporarily unavailable!</p>
                 <div className={`${classes.ProjectWrapper}`}>
                 {
                     projectList.map(( {name, keyId, technologies, description, background, githubUrl, liveLink, image, delay } ) => (
