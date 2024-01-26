@@ -7,6 +7,8 @@ import {motion} from 'framer-motion';
 import FiredUp from '../../images/firedup.webp'
 import MOAT from '../../images/MOAT.webp'
 import DeepThoughts from '../../images/DeepThoughts.webp'
+import { Button } from "react-scroll";
+import LinkBtn from "../Button/LinkBtn";
 // import ShopShop from '../../images/ShopShop.png'
 // import Cineflex from '../../images/Cineflex.png'
 // import ETS from '../../images/ETS.png'
@@ -38,7 +40,7 @@ function Projects () {
             description: "A custom rental property management tool to streamline communication between landlords and tenants",
             background: "45%",
             githubUrl: "https://github.com/utorteam11/MOAT",
-            liveLink: "https://moatbyoceans11.herokuapp.com/",
+            liveLink: "https://github.com/utorteam11/MOAT",
             image: MOAT,
             delay: 0.40
         },
@@ -49,7 +51,7 @@ function Projects () {
             description: "A social network designed to interact with friends and their thoughts/reactions.",
             background: "4%",
             githubUrl: "https://github.com/TaimurHasan/deep-thoughts",
-            liveLink: "https://deepthoughtsbytaimur.herokuapp.com/",
+            liveLink: "https://github.com/TaimurHasan/deep-thoughts",
             image: DeepThoughts,
             delay: 0.60
         },
@@ -122,26 +124,26 @@ function Projects () {
     ]
 
     return (
-        <motion.div initial={{opacity: 0, x: -40}} animate={{opacity: 1, x: 0}} transition={{duration: 1}} className="main-body">
-                <h2 className={classes.projectHeader}>Top Projects</h2>
-                <p>Note: Due to Heroku's removal of the free project tier, some projects are being refactored for alternative deployments and may be temporarily unavailable!</p>
+        <motion.div initial={{opacity: 0, x: -40}} animate={{opacity: 1, x: 0}} transition={{duration: 0.5}} className={classes.mainContainer}>
+                <h2 className={classes.projectHeader}>Projects</h2>
                 <div className={`${classes.ProjectWrapper}`}>
                 {
                     projectList.map(( {name, keyId, technologies, description, background, githubUrl, liveLink, image, delay } ) => (
-                        <motion.div 
+                        <motion.a 
                             initial={animateFrom}
                             animate={animateTo}
                             key = {keyId}
+                            href={liveLink}
+                            target="_blank"
                             className={classes.ProjectCard}
-                            transition={{ duration: 1, delay: delay }}
+                            rel="noreferrer"
+                            transition={{ duration: 0.5, delay: delay }}
                             style={{backgroundImage: `url(${image})`, backgroundPosition: `${background}`}}
                         >
                             <div className={classes.ProjectDetails}>
                                 <div className = {classes.ProjectLinks}>
                                     <h4>
-                                        <a title="Go To Project" href={`${liveLink}`} target="_blank" rel="noreferrer">
-                                            {name}
-                                        </a>    
+                                        {name} 
                                     </h4>
                                     <div className={classes.LinkDiv}>
                                         <a title="GitHub Repository" href={`${githubUrl}`} target="_blank" rel="noreferrer">
@@ -152,10 +154,15 @@ function Projects () {
                                 <p>{description}</p>
                                 <p>Uses: {technologies}</p>
                             </div>
-                        </motion.div>
+                        </motion.a>
                     ))
                 }
                 </div>
+                <LinkBtn
+                    link={'https://drive.google.com/file/d/1eWWduh1C5Ep5X5wG-uTGXHguErlypIAq/view?usp=sharing'}
+                    forward={true}
+                    text={'Resume'}
+                />
         </motion.div>
     )
 }

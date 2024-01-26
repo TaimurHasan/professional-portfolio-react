@@ -4,21 +4,17 @@ import { AiFillLinkedin, AiFillGithub, AiFillTwitterSquare } from "react-icons/a
 import { HiOutlineMail } from "react-icons/hi"
 import headshot from '../../images/Headshot.webp'
 import {motion} from 'framer-motion';
+import Button from "../Button";
 
-function Hero () {
+function Hero (props) {
 
     return (
 
         <section className={classes.hero}>
                 <motion.div initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} className={classes.HeroContent}>
-                    <div className = {`${classes.imageContainer} ${classes.mobileImage}`}>
-                        <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {headshot} />
-                    </div>
                     <div className = {classes.HeroIntro}>
-                        <h2 className={classes.typeAnimation}>👋 Hi, I'm Taimur</h2>
-                        <h2 className={classes.HeadingIntro}>Full Stack Engineer</h2>
-                        <p>Currently Full Stack Engineer @ Manulife</p>
-                        <p>A University of Toronto Full-Stack Development and Wilfrid Laurier Business school graduate with a passion for user-centric and scalable technology.</p>
+                        <h2 className={classes.HeadingIntro}>👋 Hi, I'm Taimur</h2>
+                        <h2 className={classes.typeAnimation}>I'm a full stack engineer, frontend designer, and problem solver.</h2>
                         <div className = {classes.HeroLinks}> 
                             <a href="https://www.linkedin.com/in/taimur-h/" title="LinkedIn" target="_blank" rel="noreferrer">
                              <AiFillLinkedin className = {classes.Link} style={{marginLeft:"0px"}}/>
@@ -34,11 +30,13 @@ function Hero () {
                             </a>
                         </div>
                     </div>
-                    <div className = {`${classes.imageContainer} ${classes.desktopImage}`}>
-                        <img alt="taimur hasan's headshot" className = {classes.HeroImage} src = {headshot} />
-                    </div>
+                    <Button 
+                        nextPage={'about'}
+                        forward={true}
+                        text={'About Me'}
+                        {...props}
+                    />
                 </motion.div>
-                <div className={classes.aboutStart} id="about"></div>
         </section>
 
     )

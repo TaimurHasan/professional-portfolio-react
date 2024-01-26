@@ -2,17 +2,16 @@ import React from "react";
 import classes from './Button.module.css';
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
-const Button = (props) => {
+const LinkBtn = (props) => {
     const {
         text,
         forward,
-        nextPage,
-        history,
+        link,
     } = props;
 
     return(
         <div className={classes.NavBtns}>
-            <span className={classes.AboutLink} onClick={() => history.push(`/${nextPage}`)}> 
+            <a className={classes.AboutLink} href={link} target="_blank" rel="noreferrer">
                     {forward ? (
                         <>
                             {text}
@@ -27,10 +26,10 @@ const Button = (props) => {
                         </>
                     )
                     } 
-            </span>
+            </a>
         </div>
     )
 };
 
-export default Button;
+export default LinkBtn;
 

@@ -7,7 +7,7 @@
 body {
   margin: 0;
   color: #A0AEC0;
-  background-color: #1A202C;
+  background-color: #2b2b33;
   font-family: 'Manrope', SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,6 +33,10 @@ main {
   height: 100%;
 }
 
+.mainBody {
+  padding: 0 8%;
+}
+
 nav li {
   list-style: none;
 }
@@ -42,20 +46,8 @@ a {
   color: black;
 }
 
-.main-body {
-  margin: 10% 10% 5% 10%;
-  min-height: auto;
-}
-
 .main-body p {
   font-size: 20px;
-}
-
-
-@media screen and (min-width: 775px) {
-  .main-body {
-    margin: 10% 8% 0% 8%;
-  }
 }
 
 

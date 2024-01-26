@@ -10,15 +10,15 @@ import {motion} from 'framer-motion';
 
 // logos were removed due to performance, will be re-implemented as SVGs
 
-function Intro ({ showAbout, setShowAbout }) {
+function Intro (props) {
     const animateFrom = {opacity: 0, x: -40}
     const animateTo = {opacity: 1, x: 0}
 
     return(
-        <motion.div initial={animateFrom} animate={animateTo} transition={{duration: 1}} className={`main-body`}>
+        <motion.div initial={animateFrom} animate={animateTo} transition={{duration: 1}} className={classes.mainContainer}>
             <h1 className={classes.aboutHeading}>About Me</h1>
             <div className={classes.aboutContainer}>
-                <img className={classes.introCode} src={taimurIntro} alt="javascript code highlighting an introduction to taimur"/>
+                {/* <img className={classes.introCode} src={taimurIntro} alt="javascript code highlighting an introduction to taimur"/> */}
                 <div className={classes.IntroBody}>
                     <p>
                         I'm a Toronto-based full stack engineer who specializes in designing and building fantastic user experiences using React, JavaScript, and the MERN Stack. 
@@ -26,8 +26,16 @@ function Intro ({ showAbout, setShowAbout }) {
                         <br/>
                         <br/>
                         I do not consider myself as someone who writes code, but as someone who solves problems using technology.
+                        <br/>
+                        <br/>
+                        Currently Full Stack Engineer @ Manulife
                     </p>
-                    <Button showAbout={showAbout} setShowAbout={setShowAbout}/>
+                    <Button 
+                        nextPage={'projects'}
+                        forward={true}
+                        text={'Projects'}
+                        {...props}
+                    />
                 </div>
                 {/* <div className={classes.logoContainer}>
                     <IoLogoJavascript className={classes.logo} />
@@ -37,7 +45,6 @@ function Intro ({ showAbout, setShowAbout }) {
                     <DiMongodb className={classes.logo} />
                 </div> */}
             </div>
-            <div className={classes.projectStart} id="button"></div>
         </motion.div>
     )
 };

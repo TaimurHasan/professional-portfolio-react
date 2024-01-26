@@ -1,5 +1,4 @@
 .hero {
-    background: #1A202C;
     color: white;
 }
 
@@ -74,81 +73,69 @@
     margin-bottom: 100px;
 }
 
-@media screen and (min-width: 775px) {
-    .hero {
-        height: 700px;
-        padding: 0 8%;
-    }
-
-
-    .HeroContent {
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .HeroContent h2 {
-        padding: 0;
-        font-size: 40px;
-        font-weight: 400;
-        margin: 0;
-        text-align: start;
-    }
-    .HeroContent p {
-        padding: 0;
-        text-align: start;
-        font-size: 22px;
-        width: 90%;
-        margin: 2% 0;
-    }
-    
-    .HeroIntro {
-        width: 100%;
-    }
-
-    .imageContainer {
-        display: flex;
-        align-items: center;
-        width: 300px;
-        margin: 3% 0;
-    }
-    
-    .mobileImage {
-        display: none;
-    }
-
-    .HeroImage {
-        border-radius: 10%;
-    }
-
-    .Link {
-        height: 55px;
-        width: 55px;
-    }
-
-    .Link:hover {
-        height: 57px;
-        width: 57px;
-    }
-
-    .HeroLinks {
-        justify-content: flex-start;
-        margin-top: 4%;
-        height: 70px;
-    }
-
-    .HeroContent .HeadingIntro {
-        margin-bottom: 1%;
-    }
-
-    .HeroContent .SectionIntro {
-        margin-bottom: 0%;
-        width: 100%;
-    }
+.HeroContent {
+    align-items: center;
+    justify-content: center;
 }
 
-@media screen and (min-width: 990px) {
-    .hero {
-        height: 80vh;
-    }
+.HeroContent h2 {
+    padding: 0;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    text-align: start;
+}
+.HeroContent p {
+    padding: 0;
+    text-align: start;
+    font-size: 22px;
+    width: 90%;
+    margin: 2% 0;
+}
+
+.HeroIntro {
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 3% 0;
+}
+
+.mobileImage {
+    display: none;
+}
+
+.HeroImage {
+    border-radius: 10%;
+}
+
+.Link {
+    height: 55px;
+    width: 55px;
+}
+
+.Link:hover {
+    transform: scale(1.1);
+}
+
+.HeroLinks {
+    justify-content: flex-start;
+    margin-top: 4%;
+    height: 70px;
+}
+
+.HeroContent .HeadingIntro {
+    margin-bottom: 1%;
+}
+
+.HeroContent .SectionIntro {
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+.hero {
+    height: 90vh;
 }
